@@ -7,4 +7,5 @@ WEBPROTEGEDUMP=../../WebProtege/urn_webprotege_ontology_c71f4e94-c89d-437b-8478-
 
 components/actan-webprotege.owl: $(WEBPROTEGEDUMP)
 	@$(ROBOT) merge -i $(WEBPROTEGEDUMP) \
+		annotate --ontology-iri $(ONTBASE)/$@ \
 		convert -f ofn -o $@
