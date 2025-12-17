@@ -572,6 +572,12 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BSPO_0000126 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BSPO_0000126"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
@@ -617,6 +623,96 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</obo:IAO_0000116>
         <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">has role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002100 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002100">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002104 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002104">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002206 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002206">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002226 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002226">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002254 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002254">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002256 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002256">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002295 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002295">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002384 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002384">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002551 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002551">
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+    </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002551"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000116>This should be to a more restricted class, but not the Uberon class may be too restricted since it is a composition-based definition of skeleton rather than functional.</obo:IAO_0000116>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0020105 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0020105">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
     </owl:ObjectProperty>
     
 
@@ -700,6 +796,14 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.allotrope.org/ontologies/process#AFP_0003328"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+        <owl:annotatedTarget>starting</owl:annotatedTarget>
+        <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
+        <dc:source>http://www.nativefishlab.net/library/textpdf/15582.pdf</dc:source>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1961</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.allotrope.org/ontologies/process#AFP_0003328"/>
         <owl:annotatedProperty rdf:resource="http://purl.org/dc/elements/1.1/source"/>
         <owl:annotatedTarget>doi:10.1242/jeb.27.3.264</owl:annotatedTarget>
         <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
@@ -732,14 +836,6 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
         <owl:annotatedTarget>&quot;Hence, under those conditions in which a local contraction of the circular muscle can cause an effective constriction of the column, the smaller the diameter of the constriction the less is the internal pressure able to oppose it, and vice versa. Consequently, the shape is unstable, and a local peristaltic wave once initiated in a Metridium of moderate coelenteric volume and low pressure may cause great local constriction.&quot;</owl:annotatedTarget>
         <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
         <dc:source>doi:10.1242/jeb.27.3.264</dc:source>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.allotrope.org/ontologies/process#AFP_0003328"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-        <owl:annotatedTarget>starting</owl:annotatedTarget>
-        <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
-        <dc:source>http://www.nativefishlab.net/library/textpdf/15582.pdf</dc:source>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1961</rdfs:comment>
     </owl:Axiom>
     
 
@@ -1136,7 +1232,7 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
     <!-- http://purl.obolibrary.org/obo/BSPO_0000400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BSPO_0000400">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000015"/>
         <obo:IAO_0000115>A flat 2D plane intersecting an anatomical continuant, dividing it into two adjacent portions.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>anatomical cross-section</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>anatomical section</oboInOwl:hasExactSynonym>
@@ -1173,82 +1269,6 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
         <oboInOwl:hasDbXref>BSPO:cjm</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>BSPO:mah</oboInOwl:hasDbXref>
     </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
-        <obo:IAO_0000115>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</obo:IAO_0000115>
-        <rdfs:comment>Following BFO, material anatomical entities may have immaterial parts (the lumen of your stomach is part of your stomach).  The granularity limit follows the limits set by the Gene Ontology on the granularity limit for GO:cellular_component. Note that substances produced by an organism (sweat, feaces, urine) do not need to be part of an organism to qualify as an anatomical structure.</rdfs:comment>
-        <rdfs:label>anatomical entity</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A part of a cellular organism that is either an immaterial entity or a material entity with granularity above the level of a protein complex.  Or, a substance produced by a cellular organism with granularity above the level of a protein complex.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>CAROC:Brownsville2014</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
-        <obo:IAO_0000115>An Immaterial anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes and that is bounded by an anatomical surface.</obo:IAO_0000115>
-        <rdfs:comment>Original definition: &quot;Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.&quot;  The last clause. &quot;contains one or more organism substances or anatomical structures&quot; was dropped from the definition because it was an unnecessary restriction.</rdfs:comment>
-        <rdfs:label>anatomical space</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-        <obo:IAO_0000115>An anatomical entity that has mass.</obo:IAO_0000115>
-        <rdfs:label>material anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000000"/>
-        <obo:IAO_0000115>Anatomical entity that has no mass.</obo:IAO_0000115>
-        <rdfs:label>immaterial anatomical entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0000010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000007"/>
-        <obo:IAO_0000115>A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.</obo:IAO_0000115>
-        <rdfs:label>anatomical boundary</rdfs:label>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/CARO_0000010"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>CC:DOS</oboInOwl:hasDbXref>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CARO_0001010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CARO_0001010">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
-        <obo:IAO_0000115>Material anatomical entity that is a member of an individual species or is a viral or viroid particle.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym>organism or virus or viroid</oboInOwl:hasExactSynonym>
-        <rdfs:label>organism</rdfs:label>
-        <rdfs:label>organism or virus or viroid</rdfs:label>
-    </owl:Class>
     
 
 
@@ -1475,6 +1495,19 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000300"/>
         <oboInOwl:hasDefinition>A mature sexual reproductive cell of the female germline.</oboInOwl:hasDefinition>
         <rdfs:label>female gamete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PCO_0000031"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
     </owl:Class>
     
 
@@ -1730,7 +1763,7 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
     <!-- http://purl.obolibrary.org/obo/ECOCORE_00000089 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000089">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000115>A carnivore that actively captures and consumes other animals, causing their immediate or immenent death</obo:IAO_0000115>
         <obo:IAO_0000117>http://orcid.org/0000-0002-2908-3327</obo:IAO_0000117>
         <rdfs:label>predator</rdfs:label>
@@ -1856,7 +1889,7 @@ In slow starting, the fish appears to change the pitch of the sculling pectoral 
     <!-- http://purl.obolibrary.org/obo/ECOCORE_00000148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ECOCORE_00000148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000115>An organism that is consumed in whole or in part by a predator</obo:IAO_0000115>
         <rdfs:label>prey</rdfs:label>
     </owl:Class>
@@ -3700,7 +3733,7 @@ c) which is experienced by the subject as being so caused</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCIT_C28147 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C28147">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <obo:IAO_0000115>An organism in its initial stage of development following fertilization. The human embryonic period lasts approximately eight weeks, during which time organogenesis takes place.</obo:IAO_0000115>
         <obo:NCIT_NHC0>C28147</obo:NCIT_NHC0>
         <obo:NCIT_P106>Embryonic Structure</obo:NCIT_P106>
@@ -6832,7 +6865,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/PCO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000031">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000115>A material entity that is one or more organisms, viruses or viroids.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">organismal entity</rdfs:label>
@@ -6998,6 +7031,47 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>olfactory apparatus</owl:annotatedTarget>
         <oboInOwl:hasDbXref>UBERON:cjm</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <obo:IAO_0000115>A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AEO:0000192</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:50705</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>anatomical boundary</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>UBERON:0000015</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:comment>Except in the case of abstracted fiat boundaries such as the midline plane of an organism, all 2D anatomical entities have a 3 dimensional projection. For example, the surface of the shell of a muscle has a distinct shape that projects into the third dimension. Note that boundaries are 2D structures. They have no thickness - and so can not be sites of gene expression or gene product localisation. For this, use boundary region terms.</rdfs:comment>
+        <rdfs:label>non-material anatomical boundary</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>anatomical boundary</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000010</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <oboInOwl:source>CARO</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000015"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>CARO:0000010</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -7182,7 +7256,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <oboInOwl:hasDefinition>Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism&apos;s own genome.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>biological structure</oboInOwl:hasExactSynonym>
         <rdfs:label>anatomical structure</rdfs:label>
@@ -7569,10 +7643,164 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UBERON_0000463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000463">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <oboInOwl:hasDefinition>Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body.</oboInOwl:hasDefinition>
         <rdfs:label>organism substance</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000464 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <obo:IAO_0000115>Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasBroadSynonym>lumen</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>space</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref>AAO:0010110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007017</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:5897</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C94478</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001668</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001825</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C0524461</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001728</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0003190</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0001643</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>lumen space</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym>anatomical spaces</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>UBERON:0000464</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>anatomical space</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007017</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C0524461</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Lumen_Space</oboInOwl:source>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget>anatomical spaces</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>ZFA:0001643</oboInOwl:hasDbXref>
+        <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/OMO_0003004"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AAO:0010264</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001836</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001721</oboInOwl:hasDbXref>
+        <oboInOwl:id>UBERON:0000465</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical entity that has mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007016</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000466 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>Anatomical entity that has no mass.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AAO:0010265</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:00007015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001827</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001727</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>immaterial physical anatomical entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:id>UBERON:0000466</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>immaterial anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical entity that has no mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:00007015</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000466"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget>immaterial physical anatomical entity</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:67112</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -7956,6 +8184,61 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     
 
 
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33090"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
+        <obo:RO_0002175 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4751"/>
+        <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001822</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#common_anatomy"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#human_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#mouse_subset"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>FBbt:10000000</owl:annotatedTarget>
+        <sssom:mapping_justification rdf:resource="https://w3id.org/semapv/vocab/ManualMappingCuration"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/UBERON_0001088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001088">
@@ -8179,18 +8462,18 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001723">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000020"/>
-        <rdfs:subClassOf rdf:nodeID="genid193"/>
-        <rdfs:subClassOf rdf:nodeID="genid195"/>
+        <rdfs:subClassOf rdf:nodeID="genid207"/>
+        <rdfs:subClassOf rdf:nodeID="genid209"/>
         <obo:IAO_0000115>A muscular organ in the floor of the mouth.</obo:IAO_0000115>
         <obo:UBPROP_0000008>Many species of fish have small folds at the base of their mouths that might informally be called tongues, but they lack a muscular structure like the true tongues found in most tetrapods</obo:UBPROP_0000008>
         <oboInOwl:hasRelatedSynonym>glossus</oboInOwl:hasRelatedSynonym>
         <rdfs:label>tongue</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid193">
+    <owl:Restriction rdf:nodeID="genid207">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000165"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid195">
+    <owl:Restriction rdf:nodeID="genid209">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001033"/>
     </owl:Restriction>
@@ -8203,7 +8486,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001723"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid193"/>
+        <owl:annotatedTarget rdf:nodeID="genid207"/>
         <oboInOwl:source>BTO</oboInOwl:source>
         <oboInOwl:source>EHDAA2</oboInOwl:source>
         <oboInOwl:source>FMA</oboInOwl:source>
@@ -8212,7 +8495,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001723"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid195"/>
+        <owl:annotatedTarget rdf:nodeID="genid209"/>
         <oboInOwl:source>MA</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -8940,7 +9223,7 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UBERON_0002553 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0002553">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000464"/>
         <obo:IAO_0000115>Anatomical space which contains portions of one or more body substances and is bounded by the internal surface of one maximally connected anatomical structure. Examples: cranial cavity, pharyngeal recess space, nasal cavity, tooth socket, cavity of serous sac, lumen of stomach, lumen of artery, fornix of vagina.</obo:IAO_0000115>
         <oboInOwl:hasBroadSynonym>cavity</oboInOwl:hasBroadSynonym>
         <rdfs:label>anatomical cavity</rdfs:label>
@@ -9339,7 +9622,30 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UBERON_0015212 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0015212">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000126"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000475"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000126"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasDefinition>Any structure that is placed on one side of the left-right axis of a bilaterian.</oboInOwl:hasDefinition>
         <rdfs:label>lateral structure</rdfs:label>
     </owl:Class>
@@ -9412,10 +9718,16 @@ Classes for population already  exist in IDO (&apos;organism population&apos;, I
     <!-- http://purl.obolibrary.org/obo/UBERON_0034923 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0034923">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CARO_0000006"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
         <obo:IAO_0000115>Material anatomical entity consisting of multiple anatomical structures that are not connected to each other.</obo:IAO_0000115>
         <rdfs:label>disconnected anatomical group</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034923"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <oboInOwl:source>CARO</oboInOwl:source>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034923"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -10746,10 +11058,10 @@ frequently aggregate during gestation&quot;</skos:scopeNote>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000044">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000409"/>
-        <rdfs:subClassOf rdf:nodeID="genid384"/>
-        <rdfs:subClassOf rdf:nodeID="genid386"/>
-        <rdfs:subClassOf rdf:nodeID="genid388"/>
-        <rdfs:subClassOf rdf:nodeID="genid390"/>
+        <rdfs:subClassOf rdf:nodeID="genid405"/>
+        <rdfs:subClassOf rdf:nodeID="genid407"/>
+        <rdfs:subClassOf rdf:nodeID="genid409"/>
+        <rdfs:subClassOf rdf:nodeID="genid411"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <dc:source>doi:10.1371/journal.pone.0200048</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -10759,44 +11071,44 @@ frequently aggregate during gestation&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;So we do not believe that the colonies of fish or birds are a result of lack of nesting places;... the tendency is to crowd as much as possible.&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;Thus, we suggest that monitoring abiotic factors such as humidity and temperature in honeybee hives could be a strategy for identifying colonies having disturbance in their normal functioning as a eusocial community, and help to find the eventual factors leading to the decline of a honeybee colony.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid384">
+    <owl:Restriction rdf:nodeID="genid405">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000450"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid386">
+    <owl:Restriction rdf:nodeID="genid407">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000470"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid388">
+    <owl:Restriction rdf:nodeID="genid409">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000577"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid390">
+    <owl:Restriction rdf:nodeID="genid411">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001164"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid384"/>
+        <owl:annotatedTarget rdf:nodeID="genid405"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid386"/>
+        <owl:annotatedTarget rdf:nodeID="genid407"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid388"/>
+        <owl:annotatedTarget rdf:nodeID="genid409"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000044"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid390"/>
+        <owl:annotatedTarget rdf:nodeID="genid411"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -11212,7 +11524,7 @@ Individuals reaching the wall slow down and tend to become disordered (unaligned
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000061">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000242"/>
-        <rdfs:subClassOf rdf:nodeID="genid418"/>
+        <rdfs:subClassOf rdf:nodeID="genid439"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -11225,14 +11537,14 @@ Individuals reaching the wall slow down and tend to become disordered (unaligned
         <rdfs:label xml:lang="en">balling</rdfs:label>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid418">
+    <owl:Restriction rdf:nodeID="genid439">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000061"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid418"/>
+        <owl:annotatedTarget rdf:nodeID="genid439"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -11746,18 +12058,18 @@ An object may still move in relation to its environment (e.g. sliding and viscoe
         <obo:RO_0002603>SIO:000570</obo:RO_0002603>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-09-13T20:47:24.16678Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>Kinematic activity which displaces or reorients part of the body.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Kinematics activity which displaces or reorients part of the body.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>motion</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>movement</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">moving</oboInOwl:hasExactSynonym>
-        <rdfs:label>movement kinematic</rdfs:label>
+        <rdfs:label>movement kinematics</rdfs:label>
         <rdfs:seeAlso>NBO:0000001</rdfs:seeAlso>
         <skos:example>&quot;Larvae capture prey from below with stereotyped jaw and tail movements&quot;</skos:example>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000082"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
-        <owl:annotatedTarget>Kinematic activity which displaces or reorients part of the body.</owl:annotatedTarget>
+        <owl:annotatedTarget>Kinematics activity which displaces or reorients part of the body.</owl:annotatedTarget>
         <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
         <dc:source>doi:10.1093/icb/icac125</dc:source>
     </owl:Axiom>
@@ -11785,7 +12097,7 @@ An object may still move in relation to its environment (e.g. sliding and viscoe
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000082"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget>movement kinematic</owl:annotatedTarget>
+        <owl:annotatedTarget>movement kinematics</owl:annotatedTarget>
         <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -12337,7 +12649,7 @@ When it has come down the larva lies on its back, under the yolk mass... The tai
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000115">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000345"/>
-        <rdfs:subClassOf rdf:nodeID="genid537"/>
+        <rdfs:subClassOf rdf:nodeID="genid558"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -12352,14 +12664,14 @@ When it has come down the larva lies on its back, under the yolk mass... The tai
         <skos:example>&quot;Larger snakes have better venom delivery systems and can first warn a predator. If the predator does not respond to the aposematic signal, they can deliver a few effective bites, then cover up their heads and withstand a brief attack while they wait for the envenomation to repel the attacker.&quot;</skos:example>
         <skos:scopeNote>&quot;Although these species possess rear fangs and Duvernoy&apos;s gland secretions, the aperture of their mouths and effectiveness of the use of any &quot;venom&quot; is constrained by their small body size.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid537">
+    <owl:Restriction rdf:nodeID="genid558">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000115"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid537"/>
+        <owl:annotatedTarget rdf:nodeID="genid558"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -12785,7 +13097,7 @@ The relative fraction of a stride period when a particular limb is in the stance
         </rdfs:subClassOf>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-09-19T20:04:57.601329Z</oboInOwl:creation_date>
-        <oboInOwl:hasBroadSynonym>kinematic</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym>kinematics</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDefinition>[Chain that has a] particular cyclical pattern of movement characteristic of a limited range of speeds in which momentum is conserved across repeated cycles.
 
 It is described by quantities of which one or more change discontinuously at transitions to other gaits.</oboInOwl:hasDefinition>
@@ -12796,7 +13108,7 @@ It is described by quantities of which one or more change discontinuously at tra
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000126"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget>kinematic</owl:annotatedTarget>
+        <owl:annotatedTarget>kinematics</owl:annotatedTarget>
         <dc:source>doi:10.1242/jeb.158.1.369</dc:source>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1991</rdfs:comment>
     </owl:Axiom>
@@ -13419,7 +13731,7 @@ It is described by quantities of which one or more change discontinuously at tra
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000136"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid648"/>
+        <rdfs:subClassOf rdf:nodeID="genid669"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -13433,14 +13745,14 @@ It is described by quantities of which one or more change discontinuously at tra
         <rdfs:isDefinedBy>doi:10.1007/BF02381373</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">hopping</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid648">
+    <owl:Restriction rdf:nodeID="genid669">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000145"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid648"/>
+        <owl:annotatedTarget rdf:nodeID="genid669"/>
         <skos:scopeNote>&quot;Different from leaping in its repetitive, stereotyped progression...&quot;
 
 doi:10.1007/BF02381373</skos:scopeNote>
@@ -13514,12 +13826,6 @@ doi:10.1007/BF02381373</skos:scopeNote>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000147">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -13681,20 +13987,20 @@ should fall in the upper left quadrant of the gait graph. Any exceptions may be 
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000747"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-09-23T07:49:22.422162Z</oboInOwl:creation_date>
-        <oboInOwl:hasDefinition>Kinematic activity that adjusts its relative position.</oboInOwl:hasDefinition>
+        <oboInOwl:hasDefinition>Kinematics activity that adjusts its relative position.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym>maneuver</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>maneuvering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">manoeuver</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">manoeuvering</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">manoeuvre</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">manoeuvring</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">manoeuvre kinematic</rdfs:label>
+        <rdfs:label xml:lang="en">manoeuvre kinematics</rdfs:label>
         <skos:scopeNote>&quot;...stable designs not only resist externally imposed changes in an organism’s trajectory, but they also resist changes imposed by the animal itself. In contrast, mechanically unstable bodies that can easily be blown off course are also very responsive to voluntary steering maneuvers.&quot;</skos:scopeNote>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000149"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
-        <owl:annotatedTarget>Kinematic activity that adjusts its relative position.</owl:annotatedTarget>
+        <owl:annotatedTarget>Kinematics activity that adjusts its relative position.</owl:annotatedTarget>
         <rdfs:isDefinedBy>http://www.nativefishlab.net/library/textpdf/15582.pdf</rdfs:isDefinedBy>
         <skos:scopeNote>&quot;When the prey lies directly ahead about one head length away the fish stops and commences Hovering while continually adjusting to maintain its position relative to the prey.&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -13743,7 +14049,7 @@ should fall in the upper left quadrant of the gait graph. Any exceptions may be 
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000149"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">manoeuvre kinematic</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">manoeuvre kinematics</owl:annotatedTarget>
         <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
@@ -13759,7 +14065,7 @@ should fall in the upper left quadrant of the gait graph. Any exceptions may be 
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000150">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000147"/>
-        <rdfs:subClassOf rdf:nodeID="genid686"/>
+        <rdfs:subClassOf rdf:nodeID="genid706"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -13799,14 +14105,14 @@ should fall in the upper left quadrant of the gait graph. Any exceptions may be 
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000171"/>
         <skos:example>&quot;The fastest of all terrestrial runners on sprint is considered the cheetah, with a reliable measured speed of 105 km.h-1 (29.2 m.s-1).&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid686">
+    <owl:Restriction rdf:nodeID="genid706">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000150"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid686"/>
+        <owl:annotatedTarget rdf:nodeID="genid706"/>
         <rdfs:comment>&apos;Bout&apos; used here as a synonym for &apos;chain&apos;.</rdfs:comment>
         <skos:scopeNote>&quot;The low AR filefish caudal fins are likely to be more useful for short bursts of speed than for sustained swimming bouts.&quot;
 
@@ -13914,7 +14220,7 @@ doi:10.1242/jeb.194704</skos:scopeNote>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000152">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000147"/>
-        <rdfs:subClassOf rdf:nodeID="genid705"/>
+        <rdfs:subClassOf rdf:nodeID="genid725"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -13937,14 +14243,14 @@ doi:10.1242/jeb.194704</skos:scopeNote>
         <skos:scopeNote>&quot;...steady locomotion is more the exception than the rule for animals traveling through natural environments...&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;Several gregarious predators, like canids, and other fast herbivores, like the pronghorn and some antelopes, need high endurance, that is to maintain the running speed as long as possible.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid705">
+    <owl:Restriction rdf:nodeID="genid725">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000152"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid705"/>
+        <owl:annotatedTarget rdf:nodeID="genid725"/>
         <rdfs:comment>&apos;Bout&apos; used here as a synonym for &apos;chain&apos;.</rdfs:comment>
         <skos:scopeNote>&quot;The low AR filefish caudal fins are likely to be more useful for short bursts of speed than for sustained swimming bouts.&quot;
 
@@ -14554,19 +14860,22 @@ This allows speed changes around the performance limits of different gaits.</owl
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000175">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000524"/>
         <dc:source>doi:10.1007/BF02381373</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-09-23T20:46:55.391174Z</oboInOwl:creation_date>
+        <oboInOwl:hasDefinition>Activity that links the kinematics and kinetics of the whole body.</oboInOwl:hasDefinition>
         <rdfs:label xml:lang="en">positional</rdfs:label>
         <skos:scopeNote>&quot;We recommend a nomenclature that is not dedicated to or derived from any one taxonomic subset of the primates. Here we define 32 primate positional modes, divided more finely into 52 postural sub-modes and 74 locomotor sub-modes.&quot;</skos:scopeNote>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000175"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
+        <owl:annotatedTarget>Activity that links the kinematics and kinetics of the whole body.</owl:annotatedTarget>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1991</dc:date>
+        <dc:source>doi:10.1242/jeb.158.1.369</dc:source>
+        <skos:scopeNote>&quot;More importantly, we attempt to link the kinematics and kinetics of single legs to the whole body movement of a running hexaped.&quot;</skos:scopeNote>
+    </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000175"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
@@ -14587,7 +14896,7 @@ This allows speed changes around the performance limits of different gaits.</owl
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000176">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000175"/>
-        <rdfs:subClassOf rdf:nodeID="genid779"/>
+        <rdfs:subClassOf rdf:nodeID="genid799"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-09-23T20:47:13.072609Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>[Positional activity that] moves an animal from one place to another.</oboInOwl:hasDefinition>
@@ -14596,14 +14905,14 @@ This allows speed changes around the performance limits of different gaits.</owl
         <rdfs:label xml:lang="en">locomotor</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000341"/>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid779">
+    <owl:Restriction rdf:nodeID="genid799">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000077"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000176"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid779"/>
+        <owl:annotatedTarget rdf:nodeID="genid799"/>
         <skos:scopeNote>&quot;States of Metridium senile..., enlarged volume after feeding..., radial contraction..., anemone in locomotion..., states of contraction and expansion..., peristaltic wave..., &apos;shrivelling&apos; followed by re-inflation...&quot;
 
 doi:10.1242/jeb.27.3.264</skos:scopeNote>
@@ -16533,17 +16842,17 @@ A quadrupedal gait characterized by (1) synchronous IntraPAP, (2) simultaneous h
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000217"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
-        <owl:annotatedTarget>Alternating-monopodal stepping that is vaulting, and also a walking gait.</owl:annotatedTarget>
-        <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
-        <rdfs:comment>Compositional definition.</rdfs:comment>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000217"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
         <owl:annotatedTarget xml:lang="en">bipedal-walking</owl:annotatedTarget>
         <dc:source>doi:10.1152/ajpregu.1977.233.5.R243</dc:source>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1977</rdfs:comment>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000217"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDefinition"/>
+        <owl:annotatedTarget>Alternating-monopodal stepping that is vaulting, and also a walking gait.</owl:annotatedTarget>
+        <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
+        <rdfs:comment>Compositional definition.</rdfs:comment>
     </owl:Axiom>
     
 
@@ -17343,7 +17652,7 @@ Substantial backward slipping can occur in the posterior region of the animal as
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000736"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1067"/>
+        <rdfs:subClassOf rdf:nodeID="genid1087"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -17362,14 +17671,14 @@ Substantial backward slipping can occur in the posterior region of the animal as
         <rdfs:isDefinedBy>doi:10.1242/jeb.120.1.283</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">push-pulling</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1067">
+    <owl:Restriction rdf:nodeID="genid1087">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000233"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1067"/>
+        <owl:annotatedTarget rdf:nodeID="genid1087"/>
         <skos:scopeNote>&quot;Most invertebrates burrow through loose sediments by employing a discontinuous, push-pull sequence of movements that consists of two phases.&quot;
 
 doi:10.1111/j.1365-3121.1991.tb00141.x</skos:scopeNote>
@@ -18131,7 +18440,7 @@ When an individual grasps a support, the extremity bears little more than its ow
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1156"/>
+        <rdfs:subClassOf rdf:nodeID="genid1176"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -18169,14 +18478,14 @@ When an individual grasps a support, the extremity bears little more than its ow
         <rdfs:label xml:lang="en">S-coiling</rdfs:label>
         <skos:example>&quot;The evolution of an aposematic function for the rattle and associated stereotyped behavior such as the elevated S-coil appears to be linked to the coevolution of increased body size in rattlesnakes.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1156">
+    <owl:Restriction rdf:nodeID="genid1176">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000247"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1156"/>
+        <owl:annotatedTarget rdf:nodeID="genid1176"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -18443,7 +18752,7 @@ This absence of alternating bends to the left and right in the propulsive region
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000188"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1193"/>
+        <rdfs:subClassOf rdf:nodeID="genid1213"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -18457,14 +18766,14 @@ This absence of alternating bends to the left and right in the propulsive region
         <rdfs:isDefinedBy>doi:10.1007/BF02381373</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">climbing</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1193">
+    <owl:Restriction rdf:nodeID="genid1213">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000397"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000256"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1193"/>
+        <owl:annotatedTarget rdf:nodeID="genid1213"/>
         <rdfs:comment>&apos;Bout&apos; used here as a synonym for &apos;routine&apos;.</rdfs:comment>
         <skos:scopeNote>&quot;Continuous data were collected whenever a target animal was observed climbing, as
 follows:
@@ -19235,12 +19544,6 @@ b. Lean out cantilever: Knees are flexed (exemplar: tarsiers).&quot;</owl:annota
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000270">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000751"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <dc:source>doi:10.1111/tops.12554</dc:source>
         <dc:source>doi:10.1534/genetics.120.303539</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -19275,12 +19578,6 @@ b. Lean out cantilever: Knees are flexed (exemplar: tarsiers).&quot;</owl:annota
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000271">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <dc:source>doi:10.4000/ejpap.2324</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-10-07T08:06:22.076385Z</oboInOwl:creation_date>
@@ -19515,7 +19812,7 @@ Costs may be significant for building, maintenance, or defense. Structures can b
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000275">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000272"/>
-        <rdfs:subClassOf rdf:nodeID="genid1309"/>
+        <rdfs:subClassOf rdf:nodeID="genid1327"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -19529,14 +19826,14 @@ Costs may be significant for building, maintenance, or defense. Structures can b
         <rdfs:label xml:lang="en">web-building</rdfs:label>
         <skos:scopeNote>&quot;Similarly, the webs of spiders can simultaneously provide a tool for catching prey, a home base for raising brood, and a platform of expanded sensory information, based on vibrations transmitted through the web.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1309">
+    <owl:Restriction rdf:nodeID="genid1327">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000275"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1309"/>
+        <owl:annotatedTarget rdf:nodeID="genid1327"/>
         <skos:scopeNote>&quot;Some nonhuman animals exhibit innate dispositions to transform the environment by making objects: for instance, spiders’ webs or butterflies’ silk cocoons. A salient feature of these objects is that they are made always in the same way – i.e. the nonhuman animal cannot modify or improve them.&quot;
 
 doi:10.4000/ejpap.2324</skos:scopeNote>
@@ -20364,24 +20661,24 @@ wringing-an-object
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000291">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000290"/>
-        <rdfs:subClassOf rdf:nodeID="genid1384"/>
-        <rdfs:subClassOf rdf:nodeID="genid1386"/>
+        <rdfs:subClassOf rdf:nodeID="genid1402"/>
+        <rdfs:subClassOf rdf:nodeID="genid1404"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000372"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1389"/>
-        <rdfs:subClassOf rdf:nodeID="genid1391"/>
-        <rdfs:subClassOf rdf:nodeID="genid1393"/>
+        <rdfs:subClassOf rdf:nodeID="genid1407"/>
+        <rdfs:subClassOf rdf:nodeID="genid1409"/>
+        <rdfs:subClassOf rdf:nodeID="genid1411"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000046"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1396"/>
+        <rdfs:subClassOf rdf:nodeID="genid1414"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -20398,64 +20695,64 @@ wringing-an-object
         <skos:example>&quot;...the almost invariable occurrence of wing-flaps, in both chaser and chased bird, immediately after territorial encounters between male Velvet Scoters (Melanitta f. fusca).&quot;</skos:example>
         <skos:example>&quot;For example, young-of-the-year Atlantic salmon defend smaller foraging territories and exhibit reduced reaction distances towards standardised predation threats (i.e. reduced perceived predation risk) in complex versus more homogeneous habitats.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1384">
+    <owl:Restriction rdf:nodeID="genid1402">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000499"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1386">
+    <owl:Restriction rdf:nodeID="genid1404">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000331"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1389">
+    <owl:Restriction rdf:nodeID="genid1407">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000386"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1391">
+    <owl:Restriction rdf:nodeID="genid1409">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000387"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1393">
+    <owl:Restriction rdf:nodeID="genid1411">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000414"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1396">
+    <owl:Restriction rdf:nodeID="genid1414">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000024"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1384"/>
+        <owl:annotatedTarget rdf:nodeID="genid1402"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1386"/>
+        <owl:annotatedTarget rdf:nodeID="genid1404"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1389"/>
+        <owl:annotatedTarget rdf:nodeID="genid1407"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1391"/>
+        <owl:annotatedTarget rdf:nodeID="genid1409"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1393"/>
+        <owl:annotatedTarget rdf:nodeID="genid1411"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1396"/>
+        <owl:annotatedTarget rdf:nodeID="genid1414"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -22033,13 +22330,13 @@ Signs of modification include higher than normal frequency, linkage with other d
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000320">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000473"/>
-        <rdfs:subClassOf rdf:nodeID="genid1567"/>
-        <rdfs:subClassOf rdf:nodeID="genid1569"/>
-        <rdfs:subClassOf rdf:nodeID="genid1571"/>
-        <rdfs:subClassOf rdf:nodeID="genid1573"/>
-        <rdfs:subClassOf rdf:nodeID="genid1575"/>
-        <rdfs:subClassOf rdf:nodeID="genid1577"/>
-        <rdfs:subClassOf rdf:nodeID="genid1579"/>
+        <rdfs:subClassOf rdf:nodeID="genid1585"/>
+        <rdfs:subClassOf rdf:nodeID="genid1587"/>
+        <rdfs:subClassOf rdf:nodeID="genid1589"/>
+        <rdfs:subClassOf rdf:nodeID="genid1591"/>
+        <rdfs:subClassOf rdf:nodeID="genid1593"/>
+        <rdfs:subClassOf rdf:nodeID="genid1595"/>
+        <rdfs:subClassOf rdf:nodeID="genid1597"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-31T15:04:15.322717Z</oboInOwl:creation_date>
@@ -22052,74 +22349,74 @@ Signs of modification include higher than normal frequency, linkage with other d
         <skos:example>&quot;The male Andean Goose has two displays which appear to have been derived from oiling. In the first, the head is suddenly thrown backward and the crown is rolled on the middle of the back with a jerky motion. At other times, the male approaches the female with feathers depressed all over the body; on reaching her he suddenly erects all the body feathers and rolls the chin sideways over the breast.&quot;</skos:example>
         <skos:example>&quot;The only instance I recorded of head-flicks in the pre-copulation situation was in a male Red-crested Pochard. Dipping the bill to the water several times was followed by Head-flick and Preen-dorsally, the whole sequence being repeated many times before mounting occurred.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1567">
+    <owl:Restriction rdf:nodeID="genid1585">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000431"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1569">
+    <owl:Restriction rdf:nodeID="genid1587">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000610"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1571">
+    <owl:Restriction rdf:nodeID="genid1589">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000709"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1573">
+    <owl:Restriction rdf:nodeID="genid1591">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000757"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1575">
+    <owl:Restriction rdf:nodeID="genid1593">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000760"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1577">
+    <owl:Restriction rdf:nodeID="genid1595">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000795"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1579">
+    <owl:Restriction rdf:nodeID="genid1597">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000812"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1567"/>
+        <owl:annotatedTarget rdf:nodeID="genid1585"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1569"/>
+        <owl:annotatedTarget rdf:nodeID="genid1587"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1571"/>
+        <owl:annotatedTarget rdf:nodeID="genid1589"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1573"/>
+        <owl:annotatedTarget rdf:nodeID="genid1591"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1575"/>
+        <owl:annotatedTarget rdf:nodeID="genid1593"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1577"/>
+        <owl:annotatedTarget rdf:nodeID="genid1595"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000320"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1579"/>
+        <owl:annotatedTarget rdf:nodeID="genid1597"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -22173,11 +22470,11 @@ Signs of modification include higher than normal frequency, linkage with other d
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000321">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000472"/>
-        <rdfs:subClassOf rdf:nodeID="genid1588"/>
-        <rdfs:subClassOf rdf:nodeID="genid1590"/>
-        <rdfs:subClassOf rdf:nodeID="genid1592"/>
-        <rdfs:subClassOf rdf:nodeID="genid1594"/>
-        <rdfs:subClassOf rdf:nodeID="genid1596"/>
+        <rdfs:subClassOf rdf:nodeID="genid1606"/>
+        <rdfs:subClassOf rdf:nodeID="genid1608"/>
+        <rdfs:subClassOf rdf:nodeID="genid1610"/>
+        <rdfs:subClassOf rdf:nodeID="genid1612"/>
+        <rdfs:subClassOf rdf:nodeID="genid1614"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-26T14:16:12.839615Z</oboInOwl:creation_date>
@@ -22188,54 +22485,54 @@ Signs of modification include higher than normal frequency, linkage with other d
         <skos:example>&quot;JOHNSGARD records Wing-flaps in courting parties of Common and Barrow&apos;s Goldeneyes, Hooded Merganser, Smew, Red-breasted Merganser and Goosander, stressing that the movement is especially well developed in the Bufflehead.&quot;</skos:example>
         <skos:scopeNote>&quot;The Belly-preen... may be given during courting party activity or when a drake is alone beside his female... I have seen a male move away from courting party on the water to run out on the nearby shore, perform the Shake + Preen laterally to the female, and then rush back into the water to join the group.&quot;&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1588">
+    <owl:Restriction rdf:nodeID="genid1606">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000324"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1590">
+    <owl:Restriction rdf:nodeID="genid1608">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000431"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1592">
+    <owl:Restriction rdf:nodeID="genid1610">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000434"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1594">
+    <owl:Restriction rdf:nodeID="genid1612">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000610"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid1596">
+    <owl:Restriction rdf:nodeID="genid1614">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000795"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000321"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1588"/>
+        <owl:annotatedTarget rdf:nodeID="genid1606"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000321"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1590"/>
+        <owl:annotatedTarget rdf:nodeID="genid1608"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000321"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1592"/>
+        <owl:annotatedTarget rdf:nodeID="genid1610"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000321"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1594"/>
+        <owl:annotatedTarget rdf:nodeID="genid1612"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000321"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1596"/>
+        <owl:annotatedTarget rdf:nodeID="genid1614"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <skos:scopeNote>&quot;...when Common Eider parties come out on shore, Body-shake occurs in place of the Swimming-shake. This suggests that, although the paddling movements of the feet used in the swimming-shake are absent when the bird is on land, these two shakes are very closely related.&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -22982,12 +23279,6 @@ As the female moved forward over the upstream rim of the pit, she gaped and abru
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MF_0000019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <dc:source>doi:10.1016/j.anbehav.2007.09.028</dc:source>
         <dc:source>doi:10.1016/j.cub.2019.11.022</dc:source>
         <dc:source>doi:10.1111/j.1744-7429.2000.tb00506.x</dc:source>
@@ -23576,12 +23867,6 @@ As the female moved forward over the upstream rim of the pit, she gaped and abru
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000347">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000360"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <dc:source>https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-10-21T08:33:43.637699Z</oboInOwl:creation_date>
@@ -23608,7 +23893,7 @@ As the female moved forward over the upstream rim of the pit, she gaped and abru
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000348">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000341"/>
-        <rdfs:subClassOf rdf:nodeID="genid1741"/>
+        <rdfs:subClassOf rdf:nodeID="genid1757"/>
         <dc:source>doi:10.1002/ajpa.1330870108</dc:source>
         <dc:source>doi:10.1534/genetics.120.303539</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -23620,14 +23905,14 @@ As the female moved forward over the upstream rim of the pit, she gaped and abru
         <skos:example>&quot;Although lying was not a common feeding posture, when chimpanzees fed while lying the food item was most often fruit or insects.&quot;</skos:example>
         <skos:scopeNote>&quot;Since feeding is essential for survival, it impacts numerous processes and decisions throughout an animal’s life. In C. elegans, feeding controls not only growth rate, body size, fat accumulation, brood size, and lifespan, but also behaviors and decisions such as various forms of taxis, dauer decision, and egg-laying. In most cases, sensory perception of food is integrated into the worm’s metabolic status and influences the animal’s behavioral output to maximize its fitness.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1741">
+    <owl:Restriction rdf:nodeID="genid1757">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000397"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000348"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1741"/>
+        <owl:annotatedTarget rdf:nodeID="genid1757"/>
         <rdfs:comment>&apos;Bout&apos; used here as a synonym for &apos;routine&apos;.</rdfs:comment>
         <skos:scopeNote>&quot;However, if both the upright and on-the-side approaches occur in the same feeding bout the on-the-side technique more often appears first and subsequently is replaced by the upright method.&quot;
 
@@ -23730,7 +24015,7 @@ http://www.nativefishlab.net/library/textpdf/15582.pdf</skos:scopeNote>
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000617"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid1753"/>
+        <rdfs:subClassOf rdf:nodeID="genid1769"/>
         <dc:source>doi:10.1016/j.cub.2021.09.082</dc:source>
         <dc:source>doi:10.1111/j.1469-185X.2010.00163.x</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -23740,14 +24025,14 @@ http://www.nativefishlab.net/library/textpdf/15582.pdf</skos:scopeNote>
         <rdfs:label xml:lang="en">trapping</rdfs:label>
         <skos:example>&quot;For example, the external casings and nets constructed by caddisfly larvae can serve to protect the larva’s soft body and trap food items flowing through streams.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid1753">
+    <owl:Restriction rdf:nodeID="genid1769">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000357"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000351"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid1753"/>
+        <owl:annotatedTarget rdf:nodeID="genid1769"/>
         <skos:scopeNote>&quot;...the behaviour of trap-building predators is not stereotypic or fixed as was once commonly accepted, rather it can vary greatly, depending on the individual’s internal state and its interactions with external environmental factors.&quot;
 
 doi:10.1111/j.1469-185X.2010.00163.x</skos:scopeNote>
@@ -24187,12 +24472,6 @@ Capturing prey is an innate and essential behavior for the survival of many anim
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000360">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000381"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000703"/>
         <dc:source>doi:10.1177/10597123211040574</dc:source>
         <dc:source>doi:10.1534/genetics.120.303539</dc:source>
@@ -26059,7 +26338,7 @@ This may include communication and play symbols.</owl:annotatedTarget>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:source>doi:10.3389/fetho.2022.1066186</dc:source>
@@ -26711,7 +26990,7 @@ The rotation order parameter remains low.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000411">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000409"/>
-        <rdfs:subClassOf rdf:nodeID="genid2056"/>
+        <rdfs:subClassOf rdf:nodeID="genid2071"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -26741,14 +27020,14 @@ The rotation order parameter remains low.</owl:annotatedTarget>
         <skos:scopeNote>&quot;Social grouping and social behavior are often constrained by environmental factors, including predation pressure and physical habitat structure.&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;The congregating of juveniles is a weakly developed type of aggregating.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2056">
+    <owl:Restriction rdf:nodeID="genid2071">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000326"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000411"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2056"/>
+        <owl:annotatedTarget rdf:nodeID="genid2071"/>
         <dc:source>doi:10.1089/zeb.2012.0861</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -26969,7 +27248,7 @@ The rotation order parameter remains low.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000414">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000383"/>
-        <rdfs:subClassOf rdf:nodeID="genid2086"/>
+        <rdfs:subClassOf rdf:nodeID="genid2101"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -26991,14 +27270,14 @@ The rotation order parameter remains low.</owl:annotatedTarget>
         <skos:example>&quot;Alongside territorial signals, which function to keep unwanted intruders at bay, some architecture may function as an attractive signal, by conveying information to potential mates about the quality of the builder. Bowerbirds provide one of the most extravagant examples of built structures functioning as such advertisements. Male bowerbirds construct bowers from interwoven sticks and decorate the fl oor of their courtship arena with all manner of colorful objects, each assembled into discrete piles with great precision, including berries, shells, and even human-made objects, like bottle caps or poker chips.&quot;</skos:example>
         <skos:scopeNote>&quot;Sometimes a noisy Wing-flap occurs instead of the Shake. There is much variation in this display; sometimes the belly feathers are nibbled vigorously or the bill may not touch the body at all merely swinging briefly across above the feet.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2086">
+    <owl:Restriction rdf:nodeID="genid2101">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000397"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000414"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2086"/>
+        <owl:annotatedTarget rdf:nodeID="genid2101"/>
         <skos:scopeNote>&quot;...movements in secondary situations which differ in form from their &quot;normal&quot; counterparts are considered to have undergone a process of &quot;ritualization&quot;; they are referred to as &quot;displays&quot;...&quot;
 
 doi:10.1163/156853965x00138</skos:scopeNote>
@@ -27158,7 +27437,7 @@ doi:10.1163/156853965x00138</skos:scopeNote>
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000420"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2107"/>
+        <rdfs:subClassOf rdf:nodeID="genid2122"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -27178,14 +27457,14 @@ doi:10.1163/156853965x00138</skos:scopeNote>
         <rdfs:isDefinedBy>https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">musking</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2107">
+    <owl:Restriction rdf:nodeID="genid2122">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000417"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2107"/>
+        <owl:annotatedTarget rdf:nodeID="genid2122"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -27562,7 +27841,7 @@ the corners of lips are drawn back, exposing the lower, or both upper and lower 
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000421"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2148"/>
+        <rdfs:subClassOf rdf:nodeID="genid2163"/>
         <dc:source>https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-11-12T11:38:14.384672Z</oboInOwl:creation_date>
@@ -27571,14 +27850,14 @@ the corners of lips are drawn back, exposing the lower, or both upper and lower 
         <skos:example>&quot;Perhaps one of the most notable derived antipredator adaptations in snakes is the rattle, an epidermal, soundproducing structure found on the tip of the tail in 29 species of rattlesnakes.&quot;</skos:example>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2148">
+    <owl:Restriction rdf:nodeID="genid2163">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000426"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2148"/>
+        <owl:annotatedTarget rdf:nodeID="genid2163"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -27655,21 +27934,21 @@ https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origs
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000428">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000425"/>
-        <rdfs:subClassOf rdf:nodeID="genid2158"/>
+        <rdfs:subClassOf rdf:nodeID="genid2173"/>
         <dc:source>https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-11-12T11:38:47.316325Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">popping</rdfs:label>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2158">
+    <owl:Restriction rdf:nodeID="genid2173">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000428"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2158"/>
+        <owl:annotatedTarget rdf:nodeID="genid2173"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -27909,7 +28188,7 @@ https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origs
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000435">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000432"/>
-        <rdfs:subClassOf rdf:nodeID="genid2181"/>
+        <rdfs:subClassOf rdf:nodeID="genid2196"/>
         <dc:source>https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-11-12T11:40:21.55518Z</oboInOwl:creation_date>
@@ -27917,14 +28196,14 @@ https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origs
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000779"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2181">
+    <owl:Restriction rdf:nodeID="genid2196">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000435"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2181"/>
+        <owl:annotatedTarget rdf:nodeID="genid2196"/>
         <skos:scopeNote>&quot;Specialized and stereotyped antipredator behavior in snakes includes death feigning, envenomation, cloacal popping, cloacal sac discharge (musk), coiled tail displays, S-coil defensive postures, body balling and other tightly coiled defensive postures, tail vibration, mouth hissing, and dermal sound production.&quot;
 
 https://search.proquest.com/openview/163eedf011944cd2321739b51d33470d/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y</skos:scopeNote>
@@ -28337,43 +28616,43 @@ There is also evidence that alarm pheromones found in the discharge might serve 
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000444">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000396"/>
-        <rdfs:subClassOf rdf:nodeID="genid2223"/>
-        <rdfs:subClassOf rdf:nodeID="genid2225"/>
-        <rdfs:subClassOf rdf:nodeID="genid2227"/>
+        <rdfs:subClassOf rdf:nodeID="genid2238"/>
+        <rdfs:subClassOf rdf:nodeID="genid2240"/>
+        <rdfs:subClassOf rdf:nodeID="genid2242"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-11-17T11:25:37.459038Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>[Swim-flushing] which is architectural.</oboInOwl:hasDefinition>
         <rdfs:isDefinedBy>doi:10.1016/j.cub.2021.09.082</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">geometric-flushing</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2223">
+    <owl:Restriction rdf:nodeID="genid2238">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000414"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid2225">
+    <owl:Restriction rdf:nodeID="genid2240">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000441"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid2227">
+    <owl:Restriction rdf:nodeID="genid2242">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000471"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000444"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2223"/>
+        <owl:annotatedTarget rdf:nodeID="genid2238"/>
         <rdfs:comment>doi:10.1016/j.cub.2021.09.082</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000444"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2225"/>
+        <owl:annotatedTarget rdf:nodeID="genid2240"/>
         <rdfs:comment>doi:10.1016/j.cub.2021.09.082</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000444"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2227"/>
+        <owl:annotatedTarget rdf:nodeID="genid2242"/>
         <dc:source>doi:10.1016/j.cub.2021.09.082</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -28574,7 +28853,7 @@ Older fish also form schools when the conditions are unfavourable to reproductio
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000449">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000471"/>
-        <rdfs:subClassOf rdf:nodeID="genid2249"/>
+        <rdfs:subClassOf rdf:nodeID="genid2264"/>
         <dc:source>doi:10.3389/fetho.2023.1181774</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2024-11-17T11:36:14.405456Z</oboInOwl:creation_date>
@@ -28583,14 +28862,14 @@ Older fish also form schools when the conditions are unfavourable to reproductio
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000829"/>
         <skos:example>&quot;Male western diamondback rattlesnakes (Crotalus atrox) have been observed mate-guarding females, which likely occurs in other rattlesnake species as well.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2249">
+    <owl:Restriction rdf:nodeID="genid2264">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000499"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000449"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2249"/>
+        <owl:annotatedTarget rdf:nodeID="genid2264"/>
         <dc:source>doi:10.1089/zeb.2012.0861</dc:source>
         <skos:scopeNote>&quot;...protecting resources (e.g., females)...&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -30401,7 +30680,7 @@ This term has the potential to be a catch-all for multiple overlapping and even 
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000504">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000147"/>
-        <rdfs:subClassOf rdf:nodeID="genid2429"/>
+        <rdfs:subClassOf rdf:nodeID="genid2444"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -30418,14 +30697,14 @@ Generally, a result of high stress/ anxiety, or part of submissive behavior.</ob
         <rdfs:label xml:lang="en">freezing</rdfs:label>
         <skos:example>&quot;As we walk to the edge of a stream, a stickleback freezes...&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2429">
+    <owl:Restriction rdf:nodeID="genid2444">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000080"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000504"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2429"/>
+        <owl:annotatedTarget rdf:nodeID="genid2444"/>
         <skos:scopeNote>&quot;...commonly seen immediately before or after freezing bouts;&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -30922,7 +31201,7 @@ This term has the potential to be a catch-all for multiple overlapping and even 
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000570"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2489"/>
+        <rdfs:subClassOf rdf:nodeID="genid2504"/>
         <dc:source>doi:10.1016/j.cub.2019.11.022</dc:source>
         <dc:source>http://www.nativefishlab.net/library/textpdf/15582.pdf</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -30940,14 +31219,14 @@ Most commonly, predators will perform an attack swim once prey reach a ‘‘str
 
 While thus fixing on the worm the fish forms a slight Sickle-shape, and then strikes forward grasping the free tip of the worm. Hence this maneuver is the same as that used in capturing free-swimming prey, except it has a dif-ferent orientation.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2489">
+    <owl:Restriction rdf:nodeID="genid2504">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000512"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2489"/>
+        <owl:annotatedTarget rdf:nodeID="genid2504"/>
         <skos:scopeNote>&quot;Fish then release a capture strike maneuver comprising a stereotyped jaw movement and tail movements fine-tuned to the distance of the prey.&quot;
 
 doi:10.1016/j.cub.2019.11.022</skos:scopeNote>
@@ -32606,7 +32885,7 @@ Present (presenting): Halting and exposing side in front of a male or swimming u
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000541">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000002"/>
-        <rdfs:subClassOf rdf:nodeID="genid2668"/>
+        <rdfs:subClassOf rdf:nodeID="genid2683"/>
         <dc:source>doi:10.1111/1365-2656.12379</dc:source>
         <dc:source>doi:10.1534/genetics.120.303539</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -32618,14 +32897,14 @@ Present (presenting): Halting and exposing side in front of a male or swimming u
 This three-step signature, which we might describe as dispersive to exploratory to pseudoterritorial was visible in the sequence of shifts from mid-April... to the end of May...&quot;</skos:example>
         <skos:scopeNote>&quot;As animals explore their environments, their nervous systems transition between behavioral states that influence how sensory information is processed and how actions are generated.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2668">
+    <owl:Restriction rdf:nodeID="genid2683">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000541"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2668"/>
+        <owl:annotatedTarget rdf:nodeID="genid2683"/>
         <rdfs:comment>&quot;A track in the sense of a not only contains the estimated geographical coordinates of the animal, but also the most probable switching sequence through the behavior states.&quot;
 
 doi:10.1111/j.1600-0706.2011.19044.x</rdfs:comment>
@@ -32714,7 +32993,7 @@ This three-step signature, which we might describe as dispersive to exploratory 
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000543">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000541"/>
-        <rdfs:subClassOf rdf:nodeID="genid2679"/>
+        <rdfs:subClassOf rdf:nodeID="genid2694"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -32737,14 +33016,14 @@ In a male in the non-mating phase and particularly in a female carrying young, l
         <skos:example>&quot;Oscillations of locomotor activity: Sinusoidal aspect of zebrafish locomotion/swimming, with alternating high and lower-velocity phases (usually, with the frequency of 4–5 min) when exposed to novel environments.&quot;</skos:example>
         <skos:example>&quot;When C. elegans animals are removed from food, they display a stereotyped sequence of two consecutive locomotion states. For the first 15 min, they engage in a local search state (also called “area-restricted search”) consisting of a high frequency of high-angle turns and omega bends. Then, they transition to a global search state (also referred to as dispersal); where they suppress their turning rates.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2679">
+    <owl:Restriction rdf:nodeID="genid2694">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000543"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2679"/>
+        <owl:annotatedTarget rdf:nodeID="genid2694"/>
         <rdfs:comment>&quot;When C. elegans animals are removed from food, they display a stereotyped sequence of two consecutive locomotion states.&quot;
 
 doi:10.1534/genetics.120.303539</rdfs:comment>
@@ -33002,7 +33281,7 @@ In a male in the non-mating phase and particularly in a female carrying young, l
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000154"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2710"/>
+        <rdfs:subClassOf rdf:nodeID="genid2725"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -33017,14 +33296,14 @@ In a male in the non-mating phase and particularly in a female carrying young, l
         <rdfs:label xml:lang="en">darting</rdfs:label>
         <skos:example>&quot;As we walk to the edge of a stream, a stickleback freezes, then darts away in a series of rapid zig-zags punctuated by brief pauses.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2710">
+    <owl:Restriction rdf:nodeID="genid2725">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000080"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000548"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2710"/>
+        <owl:annotatedTarget rdf:nodeID="genid2725"/>
         <skos:scopeNote>&quot;Dart (darting): A single fast acceleration in one direction... May be part of dashing or erratic movement/zig-zagging (associated with multiple darts, representing fast acceleration bouts in rapid succession, in which the direction of movement also changes in a seemingly stochastic manner between the darts).&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -33069,7 +33348,7 @@ doi:10.1089/zeb.2012.0861</skos:scopeNote>
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000548"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2718"/>
+        <rdfs:subClassOf rdf:nodeID="genid2733"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
@@ -33087,14 +33366,14 @@ doi:10.1089/zeb.2012.0861</skos:scopeNote>
         <skos:example>&quot;As we walk to the edge of a stream, a stickleback freezes, then darts away in a series of rapid zig-zags punctuated by brief pauses.&quot;</skos:example>
         <skos:scopeNote>This term has been deprecated and absorbed into its parent as a synonym, given that no real siblings have emerged. It could be resurrected if &apos;meandering&apos; is not simply a synonym for a type of search pattern, or if other potential subdivisions of erratic movement crop up. NB: We are not putting pathological terms in our ontology, or seizures or drug-induced erratic movements might have fitted alongside here.</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2718">
+    <owl:Restriction rdf:nodeID="genid2733">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000357"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000549"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2718"/>
+        <owl:annotatedTarget rdf:nodeID="genid2733"/>
         <rdfs:comment>&quot;...zig-zagging (associated with multiple darts, representing fast acceleration bouts in rapid succession, in which the direction of movement also changes in a seemingly stochastic manner between the darts).&quot;
 
 doi:10.1089/zeb.2012.0861</rdfs:comment>
@@ -34916,8 +35195,8 @@ A form of place preference.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000582">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000609"/>
-        <rdfs:subClassOf rdf:nodeID="genid2920"/>
-        <rdfs:subClassOf rdf:nodeID="genid2922"/>
+        <rdfs:subClassOf rdf:nodeID="genid2935"/>
+        <rdfs:subClassOf rdf:nodeID="genid2937"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -34939,24 +35218,24 @@ A form of place preference.</owl:annotatedTarget>
 
 Preening of the young has been noted in a female Cereopsis. on several occasions this bird nibbled at the backs of her goslings, which were feathered and about three-quarters adult size.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2920">
+    <owl:Restriction rdf:nodeID="genid2935">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000463"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid2922">
+    <owl:Restriction rdf:nodeID="genid2937">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000465"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000582"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2920"/>
+        <owl:annotatedTarget rdf:nodeID="genid2935"/>
         <dc:source>doi:10.1093/beheco/12.5.534</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000582"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2922"/>
+        <owl:annotatedTarget rdf:nodeID="genid2937"/>
         <dc:source>doi:10.1016/j.yhbeh.2021.105062</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -35053,7 +35332,7 @@ Preening of the young has been noted in a female Cereopsis. on several occasions
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000847"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2936"/>
+        <rdfs:subClassOf rdf:nodeID="genid2951"/>
         <dc:source>http://www.nativefishlab.net/library/textpdf/15582.pdf</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-05-05T19:33:38.163746Z</oboInOwl:creation_date>
@@ -35064,14 +35343,14 @@ In fishes, the operculae are then adducted; the whole sequence is rapid and pass
         <oboInOwl:hasNarrowSynonym>intention yawning</oboInOwl:hasNarrowSynonym>
         <rdfs:label xml:lang="en">yawning</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2936">
+    <owl:Restriction rdf:nodeID="genid2951">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000357"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000584"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2936"/>
+        <owl:annotatedTarget rdf:nodeID="genid2951"/>
         <skos:scopeNote>&quot;In a less complete performance the sequence remains the same, but the gaping is less, the floor of the mouth is not so conspicuously depressed, and the fins are only partially, or barely, spread. Intention yawning, consisting of slight gaping and partial erection of the fins, may precede complete yawning.&quot;
 
 http://www.nativefishlab.net/library/textpdf/15582.pdf</skos:scopeNote>
@@ -35126,7 +35405,7 @@ In fishes, the operculae are then adducted; the whole sequence is rapid and pass
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000745"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid2944"/>
+        <rdfs:subClassOf rdf:nodeID="genid2959"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -35141,14 +35420,14 @@ In fishes, the operculae are then adducted; the whole sequence is rapid and pass
         <rdfs:label xml:lang="en">opto-kinetic-reflex</rdfs:label>
         <skos:example>&quot;Even post-larvae, which have been swimming well for only a few days, have been observed to turn the head to one side and fix on tiny moving particles.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid2944">
+    <owl:Restriction rdf:nodeID="genid2959">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000585"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid2944"/>
+        <owl:annotatedTarget rdf:nodeID="genid2959"/>
         <skos:scopeNote>&quot;(OKR): Stereotyped tracking eye movements triggered by moving objects across the visual field. Has two components: a smooth pursuit movement following the object, and a fast saccadic movement resetting the eyes after the object has left the visual field.&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -41463,7 +41742,7 @@ It may be characterized by the accumulation of reaction specific energy or speci
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000702">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000701"/>
-        <rdfs:subClassOf rdf:nodeID="genid3613"/>
+        <rdfs:subClassOf rdf:nodeID="genid3628"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <dc:source>doi:10.2307/4083155</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -41477,14 +41756,14 @@ It may be characterized by the accumulation of reaction specific energy or speci
         <skos:example>&quot;...a Peregrine Falcon (Falco peregrinus) searching for food begins by randomly roaming over its hunting territory. This appetitive behavior continues until a stimulus situation is encountered (e.g., a flock of teal executing fligh&apos;t maneuvers).&quot;</skos:example>
         <skos:scopeNote>&quot;LORENZ has shown that the animal actively strives to find the stimuli that makes the releasive mechanism of a certain pattern work... LORENZ, following CRAIG, called this striving or purposive behaviour appetitive behaviour. This appetitive behaviour is the place where learning and intelligence can play an important part.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3613">
+    <owl:Restriction rdf:nodeID="genid3628">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000357"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000702"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3613"/>
+        <owl:annotatedTarget rdf:nodeID="genid3628"/>
         <skos:scopeNote>&quot;The variable introductory phase of an instinctive behaviour pattern or sequence is called appetitive behaviour.&quot;
 
 doi:10.2307/4083155</skos:scopeNote>
@@ -41522,7 +41801,7 @@ doi:10.2307/4083155</skos:scopeNote>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000703">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000701"/>
-        <rdfs:subClassOf rdf:nodeID="genid3619"/>
+        <rdfs:subClassOf rdf:nodeID="genid3634"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-05-13T17:16:16.171639Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Instinctive behaviour that is terminating.</oboInOwl:hasDefinition>
@@ -41533,14 +41812,14 @@ doi:10.2307/4083155</skos:scopeNote>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:example>&quot;...a Peregrine Falcon (Falco peregrinus) searching for food begins by randomly roaming over its hunting territory... The final stoop, capture, kill, plucking, and eating form a relatively simple and stereotyped chain of consummatory acts.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3619">
+    <owl:Restriction rdf:nodeID="genid3634">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000703"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3619"/>
+        <owl:annotatedTarget rdf:nodeID="genid3634"/>
         <skos:scopeNote>&quot;...a Peregrine Falcon (Falco peregrinus) searching for food begins by randomly roaming over its hunting territory... The final stoop, capture, kill, plucking, and eating form a relatively simple and stereotyped chain of consummatory acts.&quot;
 
 doi:10.2307/4083155</skos:scopeNote>
@@ -42608,7 +42887,7 @@ Pit-digging occurred as the male dipped his head and drove his snout into the pi
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000033"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid3729"/>
+        <rdfs:subClassOf rdf:nodeID="genid3744"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-05-27T08:30:37.567767Z</oboInOwl:creation_date>
@@ -42621,14 +42900,14 @@ It may be up, laterally, or rotated around the long axis.</oboInOwl:hasDefinitio
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000767"/>
         <skos:example>&quot;In Cygnus, the head-flick is entirely rotary and the head is not jerked upward... The lateral component seems to be absent or poorly developed in large birds with long necks.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3729">
+    <owl:Restriction rdf:nodeID="genid3744">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0001826"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000725"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3729"/>
+        <owl:annotatedTarget rdf:nodeID="genid3744"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <skos:scopeNote>&quot;This comfort movement clearly functions in removing water or foreign material from the head.&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -43023,7 +43302,7 @@ seized a pebble with his jaws, lifted his head and swam forward...&quot;</owl:an
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BSPO_0000417"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid3773"/>
+        <rdfs:subClassOf rdf:nodeID="genid3788"/>
         <dc:source>ISBN:9780226315737</dc:source>
         <dc:source>doi:10.1674/0003-0031(2000)144[0187:SBITBC]2.0.CO;2</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
@@ -43037,14 +43316,14 @@ seized a pebble with his jaws, lifted his head and swam forward...&quot;</owl:an
         <skos:example>&quot;A large female N. micropogon typically arched her anterior body about 30° from the substrate, whereas a small female arched 60-90°.&quot;</skos:example>
         <skos:example>&quot;The horizontal fluke of the whale may be brought into play to further control forward pitch or even to extend the head and back.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3773">
+    <owl:Restriction rdf:nodeID="genid3788">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000086"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002495"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000731"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3773"/>
+        <owl:annotatedTarget rdf:nodeID="genid3788"/>
         <dc:source>doi:10.1674/0003-0031(2000)144[0187:SBITBC]2.0.CO;2</dc:source>
         <skos:scopeNote>&quot;The female’s motion at the end of her run (i.e., frontal head pitch and sagittal twist) is termed “retroflexure”...&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -44143,17 +44422,11 @@ This represents the down stroke (posterior) in flapping.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000747">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000078"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CARO_0001010"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-06-29T16:36:12.085589Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>Activity that involves the displacement and orientation of body segments, joint angles, and spatio-temporal gait parameters.</oboInOwl:hasDefinition>
         <oboInOwl:hasExactSynonym xml:lang="en">kinematics</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">kinematic activity</rdfs:label>
+        <rdfs:label xml:lang="en">kinematics activity</rdfs:label>
         <skos:example>&quot;...control muscles of flies generate little or no mechanical power yet act as controllable springs to direct the forces of much larger power muscles, thus providing the means by which the nervous system can rapidly alter wing kinematics by varying the timing of activation.&quot;</skos:example>
     </owl:Class>
     <owl:Axiom>
@@ -44173,9 +44446,8 @@ This represents the down stroke (posterior) in flapping.</owl:annotatedTarget>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000747"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
-        <owl:annotatedTarget xml:lang="en">kinematic activity</owl:annotatedTarget>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2003</dc:date>
-        <dc:source>doi:10.1242/jeb.00424</dc:source>
+        <owl:annotatedTarget xml:lang="en">kinematics activity</owl:annotatedTarget>
+        <dc:contributor>https://orcid.org/0000-0002-4277-2151</dc:contributor>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000747"/>
@@ -44748,7 +45020,7 @@ Behaviors employed by adult males and adult females in the advertisement of sexu
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000784"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid3962"/>
+        <rdfs:subClassOf rdf:nodeID="genid3976"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -44774,14 +45046,14 @@ Behaviors employed by adult males and adult females in the advertisement of sexu
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000771"/>
         <skos:example>&quot;Ardeola ibis... The head is oiled by rubbing the &quot;chin&quot; and &quot;face&quot; on the exposed oil gland. Much commoner are the oil-distributing movements in which head and neck are vigorously rubbed and rolled over the back and area around the humerus.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3962">
+    <owl:Restriction rdf:nodeID="genid3976">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000757"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3962"/>
+        <owl:annotatedTarget rdf:nodeID="genid3976"/>
         <skos:scopeNote>&quot;Some of these categories (e.g. oiling and bathing) include movements which occur in sequences and form a pattern.&quot;
 
 doi:10.1163/156853965x00138</skos:scopeNote>
@@ -44915,7 +45187,7 @@ These substances may be applied with the bill, or the bird may “bathe” or po
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000760">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000788"/>
-        <rdfs:subClassOf rdf:nodeID="genid3979"/>
+        <rdfs:subClassOf rdf:nodeID="genid3993"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -44935,14 +45207,14 @@ These substances may be applied with the bill, or the bird may “bathe” or po
         <skos:scopeNote>&quot;Records of species which bathe in... dew, snow... are scanty.&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;The cleaning movements accompanying bathing are called &quot;washing&quot;.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid3979">
+    <owl:Restriction rdf:nodeID="genid3993">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000079"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000760"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid3979"/>
+        <owl:annotatedTarget rdf:nodeID="genid3993"/>
         <rdfs:comment>&quot;Some of these categories (e.g. oiling and bathing) include movements which occur in sequences and form a pattern.&quot;
 
 doi:10.1163/156853965x00138</rdfs:comment>
@@ -45104,12 +45376,12 @@ The neck is partly extended and the foot is brought direct (&quot;vornherum&quot
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000763">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000708"/>
-        <rdfs:subClassOf rdf:nodeID="genid4000"/>
-        <rdfs:subClassOf rdf:nodeID="genid4002"/>
-        <rdfs:subClassOf rdf:nodeID="genid4004"/>
-        <rdfs:subClassOf rdf:nodeID="genid4006"/>
-        <rdfs:subClassOf rdf:nodeID="genid4008"/>
-        <rdfs:subClassOf rdf:nodeID="genid4010"/>
+        <rdfs:subClassOf rdf:nodeID="genid4014"/>
+        <rdfs:subClassOf rdf:nodeID="genid4016"/>
+        <rdfs:subClassOf rdf:nodeID="genid4018"/>
+        <rdfs:subClassOf rdf:nodeID="genid4020"/>
+        <rdfs:subClassOf rdf:nodeID="genid4022"/>
+        <rdfs:subClassOf rdf:nodeID="genid4024"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -45124,64 +45396,64 @@ The neck is partly extended and the foot is brought direct (&quot;vornherum&quot
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000757"/>
         <skos:scopeNote>&quot;...movements of various parts of the bird&apos;s body may be involved in several comfort movements. Tail-wag, for example, which frequently occurs as an independent action, is an integral part of the body-shake and it also accompanies head-dipping during bathing.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4000">
+    <owl:Restriction rdf:nodeID="genid4014">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000725"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4002">
+    <owl:Restriction rdf:nodeID="genid4016">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000764"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4004">
+    <owl:Restriction rdf:nodeID="genid4018">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000765"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4006">
+    <owl:Restriction rdf:nodeID="genid4020">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000767"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4008">
+    <owl:Restriction rdf:nodeID="genid4022">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000769"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4010">
+    <owl:Restriction rdf:nodeID="genid4024">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000770"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4000"/>
+        <owl:annotatedTarget rdf:nodeID="genid4014"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4002"/>
+        <owl:annotatedTarget rdf:nodeID="genid4016"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4004"/>
+        <owl:annotatedTarget rdf:nodeID="genid4018"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4006"/>
+        <owl:annotatedTarget rdf:nodeID="genid4020"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4008"/>
+        <owl:annotatedTarget rdf:nodeID="genid4022"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000763"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4010"/>
+        <owl:annotatedTarget rdf:nodeID="genid4024"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -45346,7 +45618,7 @@ The neck is partly extended and the foot is brought direct (&quot;vornherum&quot
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000766">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000678"/>
-        <rdfs:subClassOf rdf:nodeID="genid4032"/>
+        <rdfs:subClassOf rdf:nodeID="genid4046"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -45368,14 +45640,14 @@ The neck is partly extended and the foot is brought direct (&quot;vornherum&quot
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000765"/>
         <skos:example>&quot;In some species these movements are apparently invariable but in the Bufflehead at least they are not.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4032">
+    <owl:Restriction rdf:nodeID="genid4046">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000425"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000766"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4032"/>
+        <owl:annotatedTarget rdf:nodeID="genid4046"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <skos:scopeNote>&quot;...possibly the ritualized shake serves as an auditory signal during copulation.&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -45406,7 +45678,7 @@ The neck is partly extended and the foot is brought direct (&quot;vornherum&quot
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000767">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000795"/>
-        <rdfs:subClassOf rdf:nodeID="genid4039"/>
+        <rdfs:subClassOf rdf:nodeID="genid4053"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -45440,14 +45712,14 @@ This display consists of rapid, small-amplitude head movements in a horizontal p
         <skos:example>&quot;The Maned Goose gives very rapid Head-shakes when calling with crest erect and head held high; possibly this display had its origin in pre-flight behaviour, but it provides an example of the incorporation of head-shaking in a highly ritualized pattern.&quot;</skos:example>
         <skos:scopeNote>&quot;This apparently removes water, dirt, food particles, or loose feathers from the surface of the bill.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4039">
+    <owl:Restriction rdf:nodeID="genid4053">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000357"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000767"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4039"/>
+        <owl:annotatedTarget rdf:nodeID="genid4053"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
         <skos:scopeNote>&quot;The movements vary a great deal...&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -46904,9 +47176,9 @@ As the head is lifted it may be turned sideways so that the water is scooped bac
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000794">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000795"/>
-        <rdfs:subClassOf rdf:nodeID="genid4194"/>
-        <rdfs:subClassOf rdf:nodeID="genid4196"/>
-        <rdfs:subClassOf rdf:nodeID="genid4198"/>
+        <rdfs:subClassOf rdf:nodeID="genid4208"/>
+        <rdfs:subClassOf rdf:nodeID="genid4210"/>
+        <rdfs:subClassOf rdf:nodeID="genid4212"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-08-11T15:08:19.476255Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>[Shaking in which] vigorous motor excitation is followed by a refractory phase, during which basal locomotion is suppressed and animals do not respond to another light pulse.</oboInOwl:hasDefinition>
@@ -46914,22 +47186,22 @@ As the head is lifted it may be turned sideways so that the water is scooped bac
         <rdfs:isDefinedBy>doi:10.1089/zeb.2012.0861</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">photomotor-response</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4194">
+    <owl:Restriction rdf:nodeID="genid4208">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000069"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4196">
+    <owl:Restriction rdf:nodeID="genid4210">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000289"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4198">
+    <owl:Restriction rdf:nodeID="genid4212">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000540"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000794"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4194"/>
+        <owl:annotatedTarget rdf:nodeID="genid4208"/>
         <skos:scopeNote>&quot;Photomotor response (PMR): A stereotypic series of motor behaviors in embryonic zebrafish in response to light stimulation...&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -46937,7 +47209,7 @@ doi:10.1089/zeb.2012.0861</skos:scopeNote>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000794"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4196"/>
+        <owl:annotatedTarget rdf:nodeID="genid4210"/>
         <skos:scopeNote>&quot;Photomotor response (PMR): A stereotypic series of motor behaviors in embryonic zebrafish in response to light stimulation...&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -46945,7 +47217,7 @@ doi:10.1089/zeb.2012.0861</skos:scopeNote>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000794"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4198"/>
+        <owl:annotatedTarget rdf:nodeID="genid4212"/>
         <skos:scopeNote>&quot;Photomotor response (PMR): A stereotypic series of motor behaviors in embryonic zebrafish in response to light stimulation...&quot;
 
 doi:10.1089/zeb.2012.0861</skos:scopeNote>
@@ -47352,13 +47624,13 @@ Buckling limits the contraction.</owl:annotatedTarget>
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000805">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000446"/>
-        <rdfs:subClassOf rdf:nodeID="genid4240"/>
-        <rdfs:subClassOf rdf:nodeID="genid4242"/>
-        <rdfs:subClassOf rdf:nodeID="genid4244"/>
-        <rdfs:subClassOf rdf:nodeID="genid4246"/>
-        <rdfs:subClassOf rdf:nodeID="genid4248"/>
-        <rdfs:subClassOf rdf:nodeID="genid4250"/>
-        <rdfs:subClassOf rdf:nodeID="genid4252"/>
+        <rdfs:subClassOf rdf:nodeID="genid4254"/>
+        <rdfs:subClassOf rdf:nodeID="genid4256"/>
+        <rdfs:subClassOf rdf:nodeID="genid4258"/>
+        <rdfs:subClassOf rdf:nodeID="genid4260"/>
+        <rdfs:subClassOf rdf:nodeID="genid4262"/>
+        <rdfs:subClassOf rdf:nodeID="genid4264"/>
+        <rdfs:subClassOf rdf:nodeID="genid4266"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
@@ -47382,74 +47654,74 @@ It may indicate intention in an individual, transmit the flying mood to others, 
         <skos:example>&quot;Head-shaking is widespread in the pre-flight behaviour of Anatidae... in Greylag Geese... the intensity of the movements gradually increases up to the moment of take-off.&quot;</skos:example>
         <skos:example>&quot;Lorenz described the &quot;going-away call&quot; of the female Mallard which consisted of a series of &quot;quacks&quot; and is given especially before flight...&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4240">
+    <owl:Restriction rdf:nodeID="genid4254">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000324"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4242">
+    <owl:Restriction rdf:nodeID="genid4256">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000434"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4244">
+    <owl:Restriction rdf:nodeID="genid4258">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000709"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4246">
+    <owl:Restriction rdf:nodeID="genid4260">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000760"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4248">
+    <owl:Restriction rdf:nodeID="genid4262">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000785"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4250">
+    <owl:Restriction rdf:nodeID="genid4264">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000795"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4252">
+    <owl:Restriction rdf:nodeID="genid4266">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000806"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4240"/>
+        <owl:annotatedTarget rdf:nodeID="genid4254"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4242"/>
+        <owl:annotatedTarget rdf:nodeID="genid4256"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4244"/>
+        <owl:annotatedTarget rdf:nodeID="genid4258"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4246"/>
+        <owl:annotatedTarget rdf:nodeID="genid4260"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4248"/>
+        <owl:annotatedTarget rdf:nodeID="genid4262"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4250"/>
+        <owl:annotatedTarget rdf:nodeID="genid4264"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000805"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4252"/>
+        <owl:annotatedTarget rdf:nodeID="genid4266"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -48138,7 +48410,7 @@ But it is hard to think of systemic ways to prevent massive proliferation, given
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000575"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid4331"/>
+        <rdfs:subClassOf rdf:nodeID="genid4345"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -48153,14 +48425,14 @@ But it is hard to think of systemic ways to prevent massive proliferation, given
         <rdfs:isDefinedBy>doi:10.1163/156853965x00138</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">dashing-and-diving</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4331">
+    <owl:Restriction rdf:nodeID="genid4345">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000817"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000818"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4331"/>
+        <owl:annotatedTarget rdf:nodeID="genid4345"/>
         <dc:source>doi:10.1163/156853965x00138</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -49129,7 +49401,7 @@ The establishment of territory by males preceded pair formation. Adult males est
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000835">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000473"/>
-        <rdfs:subClassOf rdf:nodeID="genid4437"/>
+        <rdfs:subClassOf rdf:nodeID="genid4451"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -49150,14 +49422,14 @@ The establishment of territory by males preceded pair formation. Adult males est
         <skos:example>&quot;Tilapia natalensis and T. nilotica...
 The male swims slowly in front of the partner in the direction of his pit, always trying to show it a flank. If the partner stops, the male stops too and by swimming in front of the head of the partner he tries to coax it along again.&quot;&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4437">
+    <owl:Restriction rdf:nodeID="genid4451">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000414"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000835"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4437"/>
+        <owl:annotatedTarget rdf:nodeID="genid4451"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -49428,7 +49700,7 @@ The male swims slowly in front of the partner in the direction of his pit, alway
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000605"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid4467"/>
+        <rdfs:subClassOf rdf:nodeID="genid4481"/>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-09-16T11:51:46.116147Z</oboInOwl:creation_date>
         <oboInOwl:hasDefinition>[Autogrooming in which an appendage] is laid against the body and, while flapping, turned around.
@@ -49437,14 +49709,14 @@ This movement might serve to clean the corresponding area of the flank.</oboInOw
         <rdfs:isDefinedBy>doi:10.1163/156853981X00220</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">flapping-and-turning</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4467">
+    <owl:Restriction rdf:nodeID="genid4481">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000784"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000841"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4467"/>
+        <owl:annotatedTarget rdf:nodeID="genid4481"/>
         <rdfs:comment>In due course, this might be better given the part of &apos;brushing&apos; (akin to brushing crumbs off ones chest with the fingers) when a relevant term is encountered in the literature and created.</rdfs:comment>
     </owl:Axiom>
     <owl:Axiom>
@@ -50479,7 +50751,7 @@ Having seized each other firmly, they push and pull, beating heavily with the ta
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000861">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000860"/>
-        <rdfs:subClassOf rdf:nodeID="genid4574"/>
+        <rdfs:subClassOf rdf:nodeID="genid4588"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-10-01T13:45:54.310684Z</oboInOwl:creation_date>
@@ -50489,14 +50761,14 @@ The male often butts the female and she tries to evade these pushes.&quot;</skos
         <skos:example>&quot;In Aequidens and Cichlasoma species the contact with the rammed fish is made with a sudden, more or less formalised pushing out of the lower jaw...&quot;</skos:example>
         <skos:scopeNote>In essence, this term is about striking with the whole body&apos;s weight, transmitted through a failry large contact area.</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4574">
+    <owl:Restriction rdf:nodeID="genid4588">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000695"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000861"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4574"/>
+        <owl:annotatedTarget rdf:nodeID="genid4588"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -50995,7 +51267,7 @@ Lateral display: Two fish line up parallel to each other head to tail, raise the
                 <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000378"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid4629"/>
+        <rdfs:subClassOf rdf:nodeID="genid4643"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -51021,14 +51293,14 @@ Lateral display: Two fish line up parallel to each other head to tail, raise the
 The eggs of the fishes of the Tilapia-type are snapped up immediately after they have been spawned... As long as she is carrying eggs the female makes only weak respiratory movements in which the mouth is only slightly opened. These movements having lasted for about one minute, the female makes more intensive chewing movements for about half a minute. In each of these movements the mouth is opened wider than usually and shut completely afterwards; the bottom of the mouth is moved up and down and when the mouth is open the eggs can be seen rolling about in it.&quot;</skos:example>
         <skos:scopeNote>&quot;As long as the females are carrying eggs or young continuously, they do not take food, although they often fix and approach it, particularly shortly after spawning.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4629">
+    <owl:Restriction rdf:nodeID="genid4643">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000570"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000869"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4629"/>
+        <owl:annotatedTarget rdf:nodeID="genid4643"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -51185,10 +51457,10 @@ Observed building behaviours (e.g., carrying, inserting, and dropping material) 
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000871">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000291"/>
-        <rdfs:subClassOf rdf:nodeID="genid4651"/>
-        <rdfs:subClassOf rdf:nodeID="genid4653"/>
-        <rdfs:subClassOf rdf:nodeID="genid4655"/>
-        <rdfs:subClassOf rdf:nodeID="genid4657"/>
+        <rdfs:subClassOf rdf:nodeID="genid4665"/>
+        <rdfs:subClassOf rdf:nodeID="genid4667"/>
+        <rdfs:subClassOf rdf:nodeID="genid4669"/>
+        <rdfs:subClassOf rdf:nodeID="genid4671"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-10-08T07:57:12.971638Z</oboInOwl:creation_date>
@@ -51197,44 +51469,44 @@ Observed building behaviours (e.g., carrying, inserting, and dropping material) 
         <oboInOwl:hasExactSynonym>boundary fighting</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">boundary-fixing</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4651">
+    <owl:Restriction rdf:nodeID="genid4665">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000326"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4653">
+    <owl:Restriction rdf:nodeID="genid4667">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000522"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4655">
+    <owl:Restriction rdf:nodeID="genid4669">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000592"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4657">
+    <owl:Restriction rdf:nodeID="genid4671">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000140"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000871"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4651"/>
+        <owl:annotatedTarget rdf:nodeID="genid4665"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000871"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4653"/>
+        <owl:annotatedTarget rdf:nodeID="genid4667"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000871"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4655"/>
+        <owl:annotatedTarget rdf:nodeID="genid4669"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000871"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4657"/>
+        <owl:annotatedTarget rdf:nodeID="genid4671"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -51751,8 +52023,8 @@ A starts laying... B and C approach and eat the eggs. A chases B, and more parti
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000881">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000552"/>
-        <rdfs:subClassOf rdf:nodeID="genid4710"/>
-        <rdfs:subClassOf rdf:nodeID="genid4712"/>
+        <rdfs:subClassOf rdf:nodeID="genid4724"/>
+        <rdfs:subClassOf rdf:nodeID="genid4726"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-10-13T16:35:53.434439Z</oboInOwl:creation_date>
@@ -51763,24 +52035,24 @@ A starts laying... B and C approach and eat the eggs. A chases B, and more parti
         <rdfs:seeAlso rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000880"/>
         <skos:example>&quot;A Tilapia male, when still in his own territory, will sometimes become pale, cross the boundary, and swim through other territories practically unattacked.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4710">
+    <owl:Restriction rdf:nodeID="genid4724">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000414"/>
     </owl:Restriction>
-    <owl:Restriction rdf:nodeID="genid4712">
+    <owl:Restriction rdf:nodeID="genid4726">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000317"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000881"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4710"/>
+        <owl:annotatedTarget rdf:nodeID="genid4724"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000881"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4712"/>
+        <owl:annotatedTarget rdf:nodeID="genid4726"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -52937,7 +53209,7 @@ By the body movements of the larva, the water in the pit is constantly refreshed
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000906">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000288"/>
-        <rdfs:subClassOf rdf:nodeID="genid4826"/>
+        <rdfs:subClassOf rdf:nodeID="genid4840"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -52976,14 +53248,14 @@ The first phase of this action is an exaggerated resting attitude. The median fi
 This action is often carried out by Cichlosoma bimaculatum if alarmed when leading its young.&quot;</skos:example>
         <skos:scopeNote>&quot;The diversity of functions the same movement can get in this way is remarkable. in a great number of Cichlids it serves to lead and especially to alarm the young... In Tilapia it serves as a courting activity, probably to stimulate laying. In Pterophyllum we sometimes observed it during frontal fighting and we got the impression that it then served as a threatening activity.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4826">
+    <owl:Restriction rdf:nodeID="genid4840">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000601"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000906"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4826"/>
+        <owl:annotatedTarget rdf:nodeID="genid4840"/>
         <dc:source>doi:10.1163/156853981X00220</dc:source>
         <skos:scopeNote>&quot;To evoke the following response in the young, waving the model outside the tank will do too. This proves that the vision of the movement, not the perception of disturbance in the water, is essential to release the following response. On the contrary the fright response cannot be brought about by moving the model wildly outside the tank; apparently it is the currents that stimulate the young to fly.&quot;</skos:scopeNote>
     </owl:Axiom>
@@ -53209,7 +53481,7 @@ In case of some danger the female, after having made some violent movements agai
 
     <owl:Class rdf:about="https://github.com/Active-Animals/Ontology/ACTAN_0000910">
         <rdfs:subClassOf rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000591"/>
-        <rdfs:subClassOf rdf:nodeID="genid4856"/>
+        <rdfs:subClassOf rdf:nodeID="genid4870"/>
         <dc:source>doi:10.1242/jeb.198.1.79</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-11-06T17:54:41.77654Z</oboInOwl:creation_date>
@@ -53220,14 +53492,14 @@ In case of some danger the female, after having made some violent movements agai
         <skos:scopeNote>&quot;All bubble-gulping species possessed a negatively buoyant trunk, regardless of the presence of a swimbladder... lift derived from the swimbladder and the bubble act independently when the fish is performing ASR in the arched position. The bubble-gulping species P. olorum and Chlamydogobius, both of which lack a swimbladder, performed ASR (arched position) in a similar manner to those bubblegulping  species with a swimbladder. The non-bubble-gulping species F. tamarensis performed ASR when arched but used the beached position most frequently. All of the bubble-gulping species appeared to use bubble lift combined with the flexibility of the body to arch the head upwards, placing the mouth at the water surface. As a result, we considered lift and weight acting on the head to be independent from lift and weight acting on the trunk.&quot;</skos:scopeNote>
         <skos:scopeNote>&quot;Two obvious roles for the buccal bubble are to enhance ASR by further oxygenating the water prior to ventilating the gills and to provide O2 directly to respiratory tissues in the buccal cavity, as occurs in some gobies.&quot;</skos:scopeNote>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4856">
+    <owl:Restriction rdf:nodeID="genid4870">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000668"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000910"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4856"/>
+        <owl:annotatedTarget rdf:nodeID="genid4870"/>
         <dc:source>doi:10.1242/jeb.198.1.79</dc:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -53666,7 +53938,7 @@ he male excavates a concavity which he fills with pebbles to form a platform...&
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ECOCORE_00000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf rdf:nodeID="genid4907"/>
+        <rdfs:subClassOf rdf:nodeID="genid4921"/>
         <dc:source>doi:10.1674/0003-0031(2000)144[0187:SBITBC]2.0.CO;2</dc:source>
         <oboInOwl:created_by>Ditch Townsend</oboInOwl:created_by>
         <oboInOwl:creation_date>2025-11-10T13:26:32.600227Z</oboInOwl:creation_date>
@@ -53674,14 +53946,14 @@ he male excavates a concavity which he fills with pebbles to form a platform...&
         <rdfs:label xml:lang="en">nest-associating</rdfs:label>
         <skos:example>&quot;Other species of minnows, referred to as nest associates, often school and may spawn over active nests of Nocomis without contributing to the nest’s construction. Twenty-seven minnow species are reported as nest associates of Nocomis. Interaction of host and nest associate is thought to be mutualistic. Eggs and larvae of associates benefit from the parental care of nesting chub, and offspring of both host and associate may benefit from a dilution effect whereby predation risk per egg is reduced in the nest.&quot;</skos:example>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid4907">
+    <owl:Restriction rdf:nodeID="genid4921">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <owl:someValuesFrom rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000411"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="https://github.com/Active-Animals/Ontology/ACTAN_0000917"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid4907"/>
+        <owl:annotatedTarget rdf:nodeID="genid4921"/>
         <dc:source>https://orcid.org/0000-0002-4277-2151</dc:source>
         <skos:scopeNote>&apos;Associating&apos; per se may be separated as an synonym from &apos;aggregating&apos; in due course.</skos:scopeNote>
     </owl:Axiom>
