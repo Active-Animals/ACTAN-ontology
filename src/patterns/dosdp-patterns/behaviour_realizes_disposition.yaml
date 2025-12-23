@@ -8,8 +8,9 @@ description: >-
 
   Examples:
   - aerial-planktonic kinetics: activity that realizes the 'aerial' mode
-  - swarming: aggregating that realizes an 'emergent' repertoire and a 'disordered' form of collective-motion
+  - autogrooming: grooming that realizes a 'solitary' form of collective-motion
   - posture: positioning that realizes a 'reduced-activity' repertoire
+  - swarming: aggregating that realizes an 'emergent' repertoire and a 'disordered' form of collective-motion
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
