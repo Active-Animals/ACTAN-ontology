@@ -7,7 +7,7 @@ description: >-
   This pattern captures behaviours defined only by what they realize, such as   aggregating realizing a collective form of motion, activity realizing a unique repertoire, or locomotion realizing a specific environment-related mode.
 
   Examples:
-  - aerial-planktonic kinetics: activity that realizes the 'aerial' locomotion-mode
+  - aerial plankton: plankton travel that realizes the 'aerial' locomotion-mode
   - autogrooming: grooming that realizes a 'solitary' form of collective-motion
   - posture: positioning that realizes a 'reduced-activity' repertoire
   - swarming: aggregating that realizes an 'emergent' repertoire and a 'disordered' form of collective-motion
