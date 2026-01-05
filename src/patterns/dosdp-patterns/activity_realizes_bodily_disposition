@@ -3,14 +3,11 @@ pattern_name: activity_realizes_bodily_disposition
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/activity_realizes_bodily_disposition
 
 description: >-
-  A behaviour that realizes specific dispositions.
-  This pattern captures behaviours defined only by what they realize, such as   aggregating realizing a collective form of motion, activity realizing a unique repertoire, or locomotion realizing a specific environment-related mode.
+  This pattern captures activities defined only by the bodily disposition they realize, such as 'positioning activity' realizing a 'bodily disposition', or 'swimming' realizing its 'positional mode'.
 
   Examples:
-  - aerial plankton: plankton travel that realizes the 'aerial' locomotion-mode
-  - autogrooming: grooming that realizes a 'solitary' form of collective-motion
-  - posture: positioning that realizes a 'reduced-activity' repertoire
-  - swarming: aggregating that realizes an 'emergent' repertoire and a 'disordered' form of collective-motion
+  - 'positioning activity': 'activity behaviour' that realizes the behavioural type of 'bodily disposition'
+  - 'swimming': 'locomotion positioning' that realizes the aquatic type of 'positional mode'
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
