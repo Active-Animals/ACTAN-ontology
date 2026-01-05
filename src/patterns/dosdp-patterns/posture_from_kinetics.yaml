@@ -3,39 +3,44 @@ pattern_name: posture_from_kinetics
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/posture_from_kinetics
 
 description: >-
-  This pattern captures locomotion and posture (i.e. positioning) activities, defined only by the positional mode they realize.
+  This pattern captures those postures which are defined both by the positional mode they realize, and by the particular kinetic activities that are involved.
 
   Examples:
-  - 'swimming locomotion': 'locomotion positioning' that realizes the aquatic type of 'positional mode'
+  - hanging posture: posture positioning that realizes the 'suspensory' type of positional mode, and uses 'gripping' kinetics
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
-  positioning_activity: ACTAN:0000175
+  posture_positioning: ACTAN:0000177
   positional_mode: ACTAN:0000179
+  kinetics_activity: ACTAN:0000147
 
 relations:
   realizes: BFO:0000055
+  has_part: BFO:0000051
 
 vars:
-  parent_behaviour: "''positioning_activity''"
-  realized_disposition: "'positional_mode'"
+  posture: "''posture_positioning''"
+  realized_mode: "'positional_mode'"
+  kinetics: "'kinetics_activity'"
 
 name:
   text: "%s"
   vars:
-    - parent_behaviour
+    - posture
 
 def:
-  text: "%s that realizes the %s."
+  text: "%s that realizes the %s and is enabled by %s."
   vars:
-    - parent_behaviour
-    - realized_disposition
+    - posture
+    - realized_mode
+    - kinetics
 
 equivalentTo:
-  text: "%s and 'realizes' some %s"
+  text: "%s and 'realizes' some %s and 'has_part' some %s"
   vars:
-    - parent_behaviour
-    - realized_disposition
+    - posture
+    - realized_mode
+    - kinetics
