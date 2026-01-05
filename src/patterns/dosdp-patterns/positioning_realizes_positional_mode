@@ -1,0 +1,42 @@
+pattern_name: positioning_realizes_positional_mode
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/positioning_realizes_positional_mode
+
+description: >-
+  This pattern captures activities defined only by the bodily disposition they realize, such as 'positioning activity' realizing a 'bodily disposition', or 'swimming' realizing its 'positional mode'.
+
+  Examples:
+  - 'positioning activity': 'activity behaviour' that realizes the behavioural type of 'bodily disposition'
+  - 'swimming': 'locomotion positioning' that realizes the aquatic type of 'positional mode'
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  bodily_disposition: MF:0000032
+
+relations:
+  realizes: BFO:0000055
+
+vars:
+  parent_behaviour: "''activity_behaviour''"
+  realized_disposition: "'bodily_disposition'"
+
+name:
+  text: "%s"
+  vars:
+    - parent_behaviour
+
+def:
+  text: "%s that realizes the %s."
+  vars:
+    - parent_behaviour
+    - realized_disposition
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - parent_behaviour
+    - realized_disposition
