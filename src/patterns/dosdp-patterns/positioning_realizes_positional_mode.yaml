@@ -20,22 +20,22 @@ relations:
   realizes: BFO:0000055
 
 vars:
-  parent_behaviour: "''positioning_activity''"
-  realized_disposition: "'positional_mode'"
+  positioning: "''positioning_activity''"
+  realized_mode: "'positional_mode'"
 
 name:
   text: "%s"
   vars:
-    - parent_behaviour
+    - positioning
 
 def:
   text: "%s that realizes the %s."
   vars:
-    - parent_behaviour
-    - realized_disposition
+    - positioning
+    - realized_mode
 
 equivalentTo:
   text: "%s and 'realizes' some %s"
   vars:
-    - parent_behaviour
-    - realized_disposition
+    - positioning
+    - realized_mode
