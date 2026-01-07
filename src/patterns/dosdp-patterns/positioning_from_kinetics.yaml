@@ -6,7 +6,6 @@ description: >-
   This pattern captures locomotion and posture (i.e. positioning) activities, defined both by the positional mode they realize, and by the particular kinetic activities that are involved.
 
   Examples:
-  - surface-creeping: traversing locomotion that realizes the 'substratal' type of supported mode, and uses 'creeping' kinetics
   - hanging posture: posture positioning that realizes the 'suspensory' type of positional mode, and uses 'gripping' kinetics
 
 contributors:
