@@ -45,8 +45,10 @@ def:
     - kinetics
 
 equivalentTo:
-  text: "%s and 'realizes' some %s and 'has_part' some %s"
+  text: "%s and 'realizes' some %s and 'realizes' some %s and 'has_part' some %s and 'has_part' some %s"
   vars:
-    - positioning
-    - realized_mode
+    - gait
+    - pedestrian_disposition
+    - positional_disposition
+    - kinematics
     - kinetics
