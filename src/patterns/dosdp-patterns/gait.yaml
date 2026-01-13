@@ -3,18 +3,20 @@ pattern_name: gait
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/gait
 
 description: >-
-  This pattern captures locomotion activities, defined by the gait pattern and (predominant) pedestrian disposition that they realize, supplemented by the particular kinematic and kinetic activities that are involved.
+  This pattern captures locomotion activities, defined by the pedestrian modes and gait patterns that they realize, supplemented by the particular kinematic and kinetic activities that are involved.
 
   Examples:
-  - anguilliform-gait: BCF swimming that realizes the aquatic lateral undulating gait pattern and limbless pedestrian disposition, and uses a bending movement with added-mass push
+  - anguilliform-gait: BCF swimming that realizes a limbless, aquatic lateral undulating gait pattern, by using a bending movement with added-mass push
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
-  positioning_activity: ACTAN:0000175
-  positional_mode: ACTAN:0000179
+  locomotion_positioning: ACTAN:0000176
+  pedestrian_mode: ACTAN:0000051
+  gait_pattern: ACTAN:0000126
+  kinematics_activity: ACTAN:0000747
   kinetics_activity: ACTAN:0000147
 
 relations:
@@ -22,20 +24,24 @@ relations:
   has_part: BFO:0000051
 
 vars:
-  positioning: "''positioning_activity''"
-  realized_mode: "'positional_mode'"
+  gait: "''locomotion_positioning''"
+  pedestrian_disposition: "'positional_mode'"
+  realized_pattern: "'gait_pattern'"
+  kinematics: "'kinematics_activity'"
   kinetics: "'kinetics_activity'"
 
 name:
   text: "%s"
   vars:
-    - positioning
+    - gait
 
 def:
-  text: "%s that realizes the %s and is enabled by %s."
+  text: "%s that realizes a(n) %s, %s pattern, by using a(n) %s with %s."
   vars:
-    - positioning
-    - realized_mode
+    - gait
+    - pedestrian_disposition
+    - positional_disposition
+    - kinematics
     - kinetics
 
 equivalentTo:
