@@ -6,8 +6,8 @@ description: >-
   This pattern captures locomotion and posture (i.e. positioning) activities, defined only by the positional mode they realize.
 
   Examples:
-  - burrowing locomotion: locomotion positioning that realizes the fossorial positional mode
-  - swimming locomotion: locomotion positioning that realizes the aquatic positional mode
+  - burrowing: locomotion that realizes the fossorial positional mode
+  - swimming: locomotion that realizes the aquatic positional mode
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
