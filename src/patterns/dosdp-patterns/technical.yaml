@@ -20,6 +20,7 @@ classes:
   material_entity: BFO:0000040
 
 relations:
+  has_part: BFO:0000051
   has_participant: RO:0000057
 
 vars:
