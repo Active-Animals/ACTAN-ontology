@@ -22,7 +22,7 @@ relations:
 
 vars:
   placement: "'placement_kinematics'"
-  manoeuvre: "'placement_kinematics'"
+  manoeuvre: "'manoeuvre_kinematics'"
 
 name:
   text: "%s"
