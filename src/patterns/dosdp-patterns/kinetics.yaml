@@ -1,0 +1,43 @@
+pattern_name: kinetics
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/kinetics
+
+description: >-
+  This pattern captures kinetics activities, characterized by their physical qualities (such as momentum, friction, and pressure).
+
+  Examples:
+  - bouncing: kinetics activity that involves elasticity
+  - levering: kinetics activity that involves 'decreased' force
+  - pulling: thrust that involves tension
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  kinetics_activity: ACTAN:0000147
+  physical_quality: PATO:0001018
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  kinetics: "'kinetic_activity'"
+  physics: "'physical_quality'"
+
+name:
+  text: "%s"
+  vars:
+    - kinetics
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - kinetics
+    - physics
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - kinetics
+    - physics
