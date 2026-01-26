@@ -1,0 +1,43 @@
+pattern_name: movement
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/movement
+
+description: >-
+  This pattern captures movement activities of parts of the body, characterized by their qualities, but within limits (qualities concerning morphology, direction, position, or physical quality of a process).
+
+  Examples:
+  - bending: movement that has a curved quality
+  - jerking: movement that has a discontinuous quality
+  - shrivelling: contracting that has a 'decreased area' quality
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  movement_kinematics: ACTAN:0000082
+  quality: PATO:0000001
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  movement: "'movement_kinematics'"
+  movement_quality: "'quality'"
+
+name:
+  text: "%s"
+  vars:
+    - movement
+
+def:
+  text: "%s that has a/an %s quality."
+  vars:
+    - movement
+    - movement_quality
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - movement
+    - movement_quality
