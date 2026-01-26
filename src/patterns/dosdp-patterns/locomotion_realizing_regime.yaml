@@ -1,6 +1,6 @@
-pattern_name: locomotion_regime
+pattern_name: locomotion_realizing_regime
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotion_regime
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotion_realizing_regime
 
 description: >-
   This pattern captures locomotion activities, defined by the regime that they realize, along with the particular kinetic activities that are involved, and the form of switching behaviour used.
