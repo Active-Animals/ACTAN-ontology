@@ -6,9 +6,9 @@ description: >-
   This pattern captures manoeuvres, characterized by their physical qualities, but within limits (physical qualities concerning direction or 'movement quality').
 
   Examples:
-  - bending: movement that has a curved quality
-  - jerking: movement that has a discontinuous quality
-  - shrivelling: contracting that has a 'decreased area' quality
+  - turn: manoeuvre that has a direction and an angular velocity
+  - yawing: manoeuvre that has a yaw quality
+  - ascent: manoeuvre that has an up direction
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
