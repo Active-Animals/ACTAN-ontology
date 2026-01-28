@@ -1,0 +1,41 @@
+pattern_name: context_by_quality
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_quality
+
+description: >-
+  This pattern captures context behaviours which are best differentiated by the qualities which characterise them.
+
+  Examples:
+  - stretching: comfort behaviour that is characterised by tension
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  quality: PATO:0000001
+  
+relations:
+  has_quality: RO:0000086
+  
+vars:
+  context: "'context_behaviour'"
+  characterisation: "'quality'"
+  
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that is characterised by its %s quality."
+  vars:
+    - context
+    - characterisation
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - context
+    - characterisation
