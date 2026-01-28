@@ -1,0 +1,41 @@
+pattern_name: context_composite
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_composite
+
+description: >-
+  This pattern captures context behaviours which are best differentiated by the other context behaviours which they incorporate.
+
+  Examples:
+  - brood-guarding: caring that involves protecting
+  - pair-signaling: 'affiliative' behaviour that involves signaling
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+
+relations:
+  has_part: BFO:0000051
+
+vars:
+  context: "'context_behaviour'"
+  composite: "'context_behaviour'"
+
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that involves %s behaviour."
+  vars:
+    - context
+    - composite
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - context
+    - composite
