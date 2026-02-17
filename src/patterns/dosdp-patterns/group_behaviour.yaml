@@ -1,0 +1,42 @@
+pattern_name: group_behaviour
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/group_behaviour
+
+description: >-
+  This pattern captures the emergent behaviour of an aggregation of animals, defined by the collective configuration that it realizes.
+
+  Examples:
+  - toroid: '3-dimensional' aggregation that realizes the 'milling' type of collective configuration
+  - pair-bonding: 'paired' aggregation that realizes the 'dyadic' type of collective configuration
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  communal: ACTAN:0000409
+  collective-motion: ACTAN:0000047
+
+relations:
+  realizes: BFO:0000055
+  
+vars:
+  emergent_behaviour: "''communal''"
+  configuration: "'collective-motion'"
+
+name:
+  text: "%s"
+  vars:
+    - emergent_behaviour
+
+def:
+  text: "%s that realizes the %s type of collective configuration."
+  vars:
+    - emergent_behaviour
+    - configuration
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - emergent_behaviour
+    - configuration

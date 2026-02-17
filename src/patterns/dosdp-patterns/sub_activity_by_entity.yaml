@@ -1,0 +1,42 @@
+pattern_name: sub_activity_by_entity
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/sub_activity_by_entity
+
+description: >-
+  This generic pattern captures lower level (usually terminal), entity-type, subdivisions of activities. Unless this is simply a subdivided subdivision, the parent activity should have a specific pattern (neither lower nor upper level generic pattern).
+
+  Examples:
+  - fin-flickering: flick that involves a fin
+  - purge: expelling that involves excreta
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  independent_continuant: PATO:0000001
+
+relations:
+  has_participant: RO:0000057
+  
+vars:
+  activity: "'activity_behaviour'"
+  entity: "'independent_continuant'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
+
+def:
+  text: "%s that involves a/an %s."
+  vars:
+    - activity
+    - entity
+
+equivalentTo:
+  text: "%s and 'has_participant' some %s"
+  vars:
+    - activity
+    - entity

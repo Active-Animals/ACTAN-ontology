@@ -1,0 +1,41 @@
+pattern_name: context_by_mental_process
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_mental_process
+
+description: >-
+  This pattern captures context behaviours which are best differentiated by the mental processes which they incorporate.
+
+  Examples:
+  - learned behaviour: 'perceptual' behaviour that involves the 'learning' process
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  mental_process: MF:0000020
+
+relations:
+  has_part: BFO:0000051
+  
+vars:
+  context: "'context_behaviour'"
+  mental_process: "'mental_process'"
+
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - context
+    - mental_process
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - context
+    - mental_process

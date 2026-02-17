@@ -1,0 +1,47 @@
+pattern_name: posture
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/posture
+
+description: >-
+  This pattern captures posture activities, defined by the positional modes that they realize, and the placement activities that are involved.
+
+  Examples:
+  - cantilever: posture that realizes the 'substratal' type of positional mode, with 'anchored' and 'tilted' placements
+  - float: posture that realizes the 'aquatic' type of positional mode, with a 'tilted' placement
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  posture_positioning: ACTAN:0000177
+  positional_mode: ACTAN:0000179
+  placement_kinematics: ACTAN:0000081
+
+relations:
+  realizes: BFO:0000055
+  has_part: BFO:0000051
+
+vars:
+  posture: "''posture_positioning''"
+  realized_mode: "'positional_mode'"
+  placement: "'placement_kinematics'"
+
+name:
+  text: "%s"
+  vars:
+    - posture
+
+def:
+  text: "%s that realizes the %s and is enabled by %s."
+  vars:
+    - posture
+    - realized_mode
+    - placement
+
+equivalentTo:
+  text: "%s and 'realizes' some %s and 'has_part' some %s"
+  vars:
+    - posture
+    - realized_mode
+    - placement

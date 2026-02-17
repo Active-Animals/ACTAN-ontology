@@ -1,0 +1,43 @@
+pattern_name: manoeuvre
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/manoeuvre
+
+description: >-
+  This pattern captures manoeuvres, characterized by their physical qualities, but within limits (physical qualities concerning direction or 'movement quality').
+
+  Examples:
+  - turn: manoeuvre that has a direction and an angular velocity
+  - yawing: manoeuvre that has a yaw quality
+  - ascent: manoeuvre that has an up direction
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  manoeuvre_kinematics: ACTAN:0000149
+  physical_quality: PATO:0001018
+  
+relations:
+  has_quality: RO:0000086
+
+vars:
+  manoeuvre: "'manoeuvre_kinematics'"
+  physics: "'physical_quality'"
+
+name:
+  text: "%s"
+  vars:
+    - manoeuvre
+
+def:
+  text: "%s that has a/an %s quality."
+  vars:
+    - manoeuvre
+    - physics
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - manoeuvre
+    - physics

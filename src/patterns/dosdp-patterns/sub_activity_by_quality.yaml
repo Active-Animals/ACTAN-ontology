@@ -1,0 +1,43 @@
+pattern_name: sub_activity_by_quality
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/sub_activity_by_quality
+
+description: >-
+  This generic pattern captures lower level (usually terminal), quality-type, subdivisions of activities. Unless this is simply a subdivided subdivision, the parent activity should have a specific pattern (neither lower nor upper level generic pattern).
+
+  Examples:
+  - fast-turn: turn that has an 'increased' velocity
+  - S-turn: fast-turn that has a sigmoid quality
+  - contrast: tint that has a luminance quality
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  quality: PATO:0000001
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  activity: "'activity_behaviour'"
+  quality: "'quality'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
+
+def:
+  text: "%s that has a/an %s quality."
+  vars:
+    - activity
+    - quality
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - activity
+    - quality

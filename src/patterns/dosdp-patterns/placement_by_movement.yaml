@@ -1,0 +1,42 @@
+pattern_name: placement_by_movement
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/placement_by_movement
+
+description: >-
+  This pattern captures placement activities, defined by the movements that are required.
+
+  Examples:
+  - abducted: a placement that results from an 'abduction' movement
+  - buckled: a 'contracted' placement that results from a 'buckling' contracting movement
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  placement_kinematics: ACTAN:0000081
+  movement_kinematics: ACTAN:0000082
+
+relations:
+  has_part: BFO:0000051
+
+vars:
+  placement: "'placement_kinematics'"
+  movement: "'movement_kinematics'"
+
+name:
+  text: "%s"
+  vars:
+    - placement
+
+def:
+  text: "%s that results from a/an %s."
+  vars:
+    - placement
+    - movement
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - placement
+    - movement

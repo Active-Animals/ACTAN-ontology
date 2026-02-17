@@ -1,0 +1,41 @@
+pattern_name: context_by_anatomy
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_anatomy
+
+description: >-
+  This pattern captures context behaviours which are best differentiated by the anatomical structures involved.
+
+  Examples:
+  - respiratory behaviour: physical-exchange that involves the respiratory system
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  anatomical_entity: UBERON:0001062
+  
+relations:
+  has_participant: RO:0000057
+  
+vars:
+  context: "'context_behaviour'"
+  anatomy: "'anatomical_entity'"
+  
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that involves the %s."
+  vars:
+    - context
+    - anatomy
+
+equivalentTo:
+  text: "%s and 'has_participant' some %s"
+  vars:
+    - context
+    - anatomy

@@ -1,0 +1,42 @@
+pattern_name: placement_by_manoeuvre
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/placement_by_manoeuvre
+
+description: >-
+  This pattern captures placement activities, defined by the manoeuvres that are required.
+
+  Examples:
+  - sideward_rotation: a 'rotated' placement that results from a 'yaw' manoeuvre
+  - tipping: a tilt that results from a 'pitch' manoeuvre
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  placement_kinematics: ACTAN:0000081
+  manoeuvre_kinematics: ACTAN:0000149
+
+relations:
+  has_part: BFO:0000051
+
+vars:
+  placement: "'placement_kinematics'"
+  manoeuvre: "'manoeuvre_kinematics'"
+
+name:
+  text: "%s"
+  vars:
+    - placement
+
+def:
+  text: "%s that results from a/an %s."
+  vars:
+    - placement
+    - manoeuvre
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - placement
+    - manoeuvre
