@@ -1,0 +1,42 @@
+pattern_name: colouration
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/colouration
+
+description: >-
+  This pattern captures colouration activities, characterized by their qualities (optical, spatial and variable).
+
+  Examples:
+  - iridescence: colouration activity that involves 'iridescent' variability
+  - fading: colouration activity that involves luminance
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  colouration_activity: ACTAN:0000513
+  quality: PATO:0000001
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  colouration: "'colouration_activity'"
+  optics: "'quality'"
+
+name:
+  text: "%s"
+  vars:
+    - colouration
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - colouration
+    - optics
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - colouration
+    - optics
