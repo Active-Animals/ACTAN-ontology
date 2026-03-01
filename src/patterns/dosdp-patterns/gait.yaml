@@ -6,7 +6,7 @@ description: >-
   This pattern captures locomotion activities, defined by the pedestrian modes and gait patterns that they realize, supplemented by the particular kinematic and kinetic activities that are involved.
 
   Examples:
-  - anguilliform-gait: BCF swimming that realizes a limbless, aquatic lateral undulating gait pattern, by using a bending movement with added-mass push
+  - anchor-probe-gait: burrowing that realizes a limbless, peristaltic wave gait pattern, by using a probing movement with 'anchor' and 'pull' kinetics
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -24,31 +24,31 @@ relations:
   has_part: BFO:0000051
 
 vars:
-  gait: "''locomotion_positioning''"
+  locomotor_mode: "''locomotion_positioning''"
   pedestrian_disposition: "'positional_mode'"
-  realized_pattern: "'gait_pattern'"
+  gait_type: "'gait_pattern'"
   kinematics: "'kinematics_activity'"
   kinetics: "'kinetics_activity'"
 
 name:
   text: "%s"
   vars:
-    - gait
+    - locomotor_mode
 
 def:
   text: "%s that realizes a(n) %s, %s pattern, by using a(n) %s with %s."
   vars:
-    - gait
+    - locomotor_mode
     - pedestrian_disposition
-    - positional_disposition
+    - gait_type
     - kinematics
     - kinetics
 
 equivalentTo:
   text: "%s and 'realizes' some %s and 'realizes' some %s and 'has_part' some %s and 'has_part' some %s"
   vars:
-    - gait
+    - locomotor_mode
     - pedestrian_disposition
-    - positional_disposition
+    - gait_type
     - kinematics
     - kinetics
