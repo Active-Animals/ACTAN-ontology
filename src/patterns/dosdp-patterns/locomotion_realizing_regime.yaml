@@ -40,7 +40,7 @@ def:
     - locomotion
     - realized_regime
     - switching
-    - kinematics
+    - kinetics
 
 equivalentTo:
   text: "%s and 'realizes' some %s and 'realizes' some %s and 'has_part' some %s"
@@ -48,4 +48,4 @@ equivalentTo:
     - locomotion
     - realized_regime
     - switching
-    - kinematics
+    - kinetics
