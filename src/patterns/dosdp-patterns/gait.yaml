@@ -36,7 +36,7 @@ name:
     - locomotor_mode
 
 def:
-  text: "%s that realizes a(n) %s, %s pattern, by using a(n) %s with %s."
+  text: "%s that realizes a(n) %s, %s gait pattern, by using a(n) %s with %s."
   vars:
     - locomotor_mode
     - pedestrian_disposition
