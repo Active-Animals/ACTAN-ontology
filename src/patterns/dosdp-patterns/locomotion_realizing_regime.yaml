@@ -7,7 +7,7 @@ description: >-
 
   Examples:
   - burst-coast-regime: swimming that realizes an 'intermittent' locomotion regime and 'phased' switching, by using sprinting and coasting
-  - take-off-regime: transitioning that realizes a 'transitional' regime and 'transition' switching, by using launch-thrust
+  - take-off: interfacing that realizes a 'transition' regime and 'transition' switching, by using 'launch' thrust and 'push' kinetics
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
