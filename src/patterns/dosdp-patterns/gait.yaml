@@ -7,6 +7,7 @@ description: >-
 
   Examples:
   - anchor-probe-gait: burrowing that realizes a limbless, peristaltic wave gait pattern, by using a probing movement with 'anchor' and 'pull' kinetics
+  - aquatic-lateral-undulating-gait: BCF swimming that realizes a limbless, lateral undulating gait pattern, by using a bending movement with added-mass thrust
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
