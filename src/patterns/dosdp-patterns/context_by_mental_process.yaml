@@ -6,7 +6,8 @@ description: >-
   This pattern captures context behaviours which are best differentiated by the mental processes which they incorporate.
 
   Examples:
-  - learned behaviour: 'perceptual' behaviour that involves the 'learning' process
+  - assessment cognition: 'cognition' context that involves the 'appraisal' process
+  - learned behaviour: 'perceptual' context that involves the 'learning' process
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -29,7 +30,7 @@ name:
     - context
 
 def:
-  text: "%s that involves %s."
+  text: "%s that involves the %s."
   vars:
     - context
     - mental_process
