@@ -1,13 +1,12 @@
-pattern_name: technical
+pattern_name: technical_by_kinetics
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/technical
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/technical_by_kinetics
 
 description: >-
  This pattern captures technical activities (including tool use), defined by the kinetic activities that operate along with the material entities involved.
 
   Examples:
   - attaching: constructing that uses adherence and involves an environmental material
-  - decorating: object-placing that uses lifting and involves an environmental material
   - wiping-with-object: tooling that uses wiping and involves an environmental material
 
 contributors:
@@ -15,7 +14,7 @@ contributors:
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
-  technical: ACTAN:0000271
+  technic_activity: ACTAN:0000271
   kinetics_activity: ACTAN:0000147
   material_entity: BFO:0000040
 
@@ -24,7 +23,7 @@ relations:
   has_participant: RO:0000057
 
 vars:
-  technical_act: "'technical'"
+  technical_act: "'technic_activity'"
   kinetics: "'kinetics_activity'"
   material: "'material_entity'"
 
