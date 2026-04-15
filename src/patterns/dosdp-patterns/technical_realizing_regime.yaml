@@ -1,0 +1,42 @@
+pattern_name: technical_realizing_regime
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/technical_realizing_regime
+
+description: >-
+ This pattern captures technical activities, defined by the regime involved.
+
+  Examples:
+  - construction: technic activity that realizes a rearrangement regime
+  - decoration: 'placing' activity that realizes a rearrangement regime
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  technic_activity: ACTAN:0000271
+  regime: ACTAN:0000064
+
+relations:
+  realizes: BFO:0000055
+
+vars:
+  technical_act: "'technic_activity'"
+  realized_regime: "'regime'"
+
+name:
+  text: "%s"
+  vars:
+    - technical_act
+
+def:
+  text: "%s that involves a/an %s."
+  vars:
+    - technical_act
+    - realized_regime
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - technical_act
+    - realized_regime
