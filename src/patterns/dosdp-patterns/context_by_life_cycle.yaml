@@ -1,0 +1,41 @@
+pattern_name: context_by_life_cycle
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_life_cycle
+
+description: >-
+  This pattern captures context behaviours which are best differentiated by the life cycle stage in which they occur.
+
+  Examples:
+  - assessment cognition: 'cognition' context that involves the 'appraisal' process
+  - learned behaviour: 'perceptual' context that involves the 'learning' process
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  life_cycle_stage: UBERON:0000105
+
+relations:
+  has_part: BFO:0000051
+  
+vars:
+  context: "'context_behaviour'"
+  stage: "'life_cycle_stage'"
+
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that involves the %s."
+  vars:
+    - context
+    - stage
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - context
+    - stage
