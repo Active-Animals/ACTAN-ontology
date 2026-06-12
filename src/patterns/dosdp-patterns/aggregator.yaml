@@ -1,0 +1,33 @@
+pattern_name: aggregator
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/aggregator
+
+description: >-
+  This pattern captures classes which provide an upper or lower level cataloging utility, and don't easily fit within another Pattern. Generally they should not be used directly for annotation observations.
+
+  Examples:
+  - activity: behaviour category which is mainly for aggregation purposes and should generally not be used for annotating instances
+  - positioning: activity category which is mainly for aggregation purposes and should generally not be used for annotating instances
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  behaviour: ACTAN:0000002
+
+annotationProperties:
+  ?: ?
+
+vars:
+  aggregator: "'behaviour'"
+  
+name:
+  text: "%s"
+  vars:
+    - behaviour
+
+def:
+  text: "%s category which is mainly for aggregation purposes and should generally not be used for annotating instances."
+  vars:
+    - behaviour
