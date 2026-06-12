@@ -1,0 +1,33 @@
+pattern_name: historical_disposition
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/historical_disposition
+
+description: >-
+  This pattern captures dispositions which have historically had traction, but are generally considered defunct. They are deprecated, but not merely for curation and editing reasons.
+
+  Examples:
+  - motivation: behavioural switch which is mainly of historical interest
+  - instinct: motivation which is mainly of historical interest
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  disposition: BFO:0000016
+
+annotationProperties:
+  deprecated: owl:deprecated
+
+vars:
+  historical disposition: "'disposition'"
+  
+name:
+  text: "%s"
+  vars:
+    - disposition
+
+def:
+  text: "%s which is mainly of historical interest."
+  vars:
+    - disposition
