@@ -18,7 +18,7 @@ classes:
   independent_continuant: PATO:0000001
   
 relations:
-  has_participant: RO:0000057
+  has_part: BFO:0000051
   
 vars:
   disposition: "'behavioural_disposition'"
@@ -36,7 +36,7 @@ def:
     - entity
 
 equivalentTo:
-  text: "%s and 'has_participant' some %s"
+  text: "%s and 'has_part' some %s"
   vars:
     - disposition
     - entity
