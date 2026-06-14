@@ -3,11 +3,11 @@ pattern_name: posture
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/posture
 
 description: >-
-  This pattern captures posture activities, defined by the positional modes that they realize, and the placement activities that are involved.
+  This pattern captures posture activities, defined by the medium mode that they realize, and the placement activities that are involved.
 
   Examples:
-  - cantilever: posture that realizes the 'substratal' type of positional mode, with 'anchored' and 'tilted' placements
-  - float: posture that realizes the 'aquatic' type of positional mode, with a 'tilted' placement
+  - cantilever: posture that realizes the 'substratal' type of medium mode, with 'anchored' and 'tilted' placements
+  - float: posture that realizes the 'aquatic' type of medium mode, with a 'tilted' placement
 
 contributors:
   - https://orcid.org/0000-0002-6601-2165
@@ -15,7 +15,7 @@ contributors:
 
 classes:
   posture_positioning: ACTAN:0000177
-  positional_mode: ACTAN:0000179
+  medium-mode: ACTAN:0000179
   placement_kinematics: ACTAN:0000081
 
 relations:
@@ -24,7 +24,7 @@ relations:
 
 vars:
   posture: "''posture_positioning''"
-  realized_mode: "'positional_mode'"
+  realized_mode: "'medium-mode'"
   placement: "'placement_kinematics'"
 
 name:
