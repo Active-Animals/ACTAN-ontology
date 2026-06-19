@@ -1,0 +1,42 @@
+pattern_name: disposition_by_quality
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_by_quality
+
+description: >-
+  This pattern captures dispositions which are best differentiated by the qualities which characterise them.
+
+  Examples:
+  - biped: pedestrian mode that involves 2 appendages
+  - aerial: positional mode that involves the atmosphere
+
+contributors:
+  - https://orcid.org/0000-0002-6601-2165
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  behavioural_disposition: BCIO:050416
+  quality: PATO:0000001
+  
+relations:
+  has_quality: RO:0000086
+  
+vars:
+  disposition: "'behavioural_disposition'"
+  characterisation: "'quality'"
+  
+name:
+  text: "%s"
+  vars:
+    - disposition
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - disposition
+    - characterisation
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - disposition
+    - characterisation
