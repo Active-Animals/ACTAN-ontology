@@ -6,9 +6,8 @@ description: >-
   This pattern captures dispositions which are best differentiated by the qualities which characterise them.
 
   Examples:
-  - biped: pedestrian mode that involves 2 appendages
-  - aerial: positional mode that involves the atmosphere
-
+  - disordered motion: collective-motion that is misaligned
+  
 contributors:
   - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
@@ -30,7 +29,7 @@ name:
     - disposition
 
 def:
-  text: "%s that involves %s."
+  text: "%s that is %s."
   vars:
     - disposition
     - characterisation
