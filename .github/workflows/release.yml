@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    container: obolibrary/odkfull:v1.6
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build release assets
+        run: |
+          cd src/ontology
+          make prepare_release_fast ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G'
+
+      - name: Attach assets to GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'release'
+        with:
+          files: |
+            actan.owl
+            actan.obo
+            actan.json
+            actan-base.owl
+            actan-base.obo
+            actan-base.json
+            actan-full.owl
+            actan-full.obo
+            actan-full.json
