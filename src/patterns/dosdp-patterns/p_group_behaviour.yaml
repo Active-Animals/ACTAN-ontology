@@ -1,0 +1,41 @@
+pattern_name: p_group_behaviour
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_group_behaviour
+
+description: |-
+  This pattern captures the emergent behaviour of an aggregation of animals, defined by the collective formation that it realizes.
+
+  Examples:
+  - torus aggregation: Aggregation participation that realizes mill formation.
+  - affiliation pairing: Pairing participation that realizes couple formation.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  participation_interaction: ACTAN:0000409
+  collective-formation: ACTAN:0000047
+
+relations:
+  realizes: BFO:0000055
+  
+vars:
+  emergence: "''participation_interaction''"
+  formation: "'collective-formation'"
+
+name:
+  text: "%s"
+  vars:
+    - emergence
+
+def:
+  text: "%s that realizes %s."
+  vars:
+    - emergence
+    - formation
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - emergence
+    - formation
