@@ -1,0 +1,42 @@
+pattern_name: p_anatomy_activity
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_anatomy_activity
+
+description: >-
+  This pattern captures subdivisions of activities by the anatomical parts involved.
+
+  Examples:
+  - musk exudation: Exudation that involves the vent.
+  - mouth gape: Gape that involves the mouth.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  anatomical_entity: UBERON:0001062
+
+relations:
+  has_participant: RO:0000057
+
+vars:
+  activity: "'activity_behaviour'"
+  anatomy: "'anatomical_entity'"
+
+name:
+  text: "%s"
+  vars:
+    - anatomy
+    - activity
+
+def:
+  text: "%s that involves the %s."
+  vars:
+    - activity
+    - anatomy
+
+equivalentTo:
+  text: "%s and 'has_participant' some %s"
+  vars:
+    - activity
+    - anatomy
