@@ -2,7 +2,7 @@ pattern_name: p_anatomy_activity
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_anatomy_activity
 
-description: >-
+description: |-
   This pattern captures subdivisions of activities by the anatomical parts involved.
 
   Examples:
@@ -22,6 +22,11 @@ relations:
 vars:
   activity: "'activity_behaviour'"
   anatomy: "'anatomical_entity'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
 
 def:
   text: "%s that involves the %s."
