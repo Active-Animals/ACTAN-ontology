@@ -1,0 +1,36 @@
+pattern_name: p_physical_activity
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_physical_activity
+
+description: >-
+  This pattern captures subdivisions of activities by their physical characteristics.
+
+  Examples:
+  - adhesion kinetics: Kinetics activity that involves adhesivity.
+  - chromatics colouration: Colouration activity that involves chromatic property.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  physical_object_characteristic: PATO:0001241
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  activity: "'activity_behaviour'"
+  physical_characteristic: "'physical_object_characteristic'"
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - activity
+    - physical_characteristic
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - activity
+    - physical_characteristic
