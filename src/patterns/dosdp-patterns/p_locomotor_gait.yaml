@@ -33,7 +33,7 @@ vars:
 name:
   text: "%s"
   vars:
-    - locomotion
+    - gait
 
 def:
   text: "%s that realizes the %s, and the %s, by using %s with %s."
