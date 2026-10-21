@@ -1,0 +1,27 @@
+pattern_name: p_aggregator_behaviour
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_aggregator_behaviour
+
+description: |-
+  This pattern captures classes which simply provide an aggregational cataloging utility. They should not be used directly for annotating observations.
+  Examples:
+  - 'activity behaviour'
+  - 'context behaviour'
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  behaviour: ACTAN:0000002
+
+relations: {}
+
+annotationProperties:
+  comment: rdfs:comment
+
+vars:
+  aggregator: "'behaviour'"
+  
+annotations:
+  - annotationProperty: comment
+    text: "This class is just an aggregator and not for annotation."
