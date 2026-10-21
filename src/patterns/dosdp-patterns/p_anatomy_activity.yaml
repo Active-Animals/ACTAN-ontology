@@ -23,12 +23,6 @@ vars:
   activity: "'activity_behaviour'"
   anatomy: "'anatomical_entity'"
 
-name:
-  text: "%s"
-  vars:
-    - anatomy
-    - activity
-
 def:
   text: "%s that involves the %s."
   vars:
