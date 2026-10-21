@@ -22,6 +22,11 @@ annotationProperties:
 vars:
   aggregator: "'behaviour'"
   
+name:
+  text: "%s"
+  vars:
+    - aggregator
+
 annotations:
   - annotationProperty: comment
     text: "This class is just an aggregator and not for annotation."
