@@ -1,0 +1,39 @@
+pattern_name: p_individual_disposition
+ 
+pattern_iri: http://purl.obolibrary.org/obo/mypattern/p_individual_disposition
+ 
+description: >-
+  A disposition that inheres in an individual organism. The bearer is fixed in the axiom so that
+  individual-level and group-level dispositions cannot be mixed up.
+ 
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+ 
+classes:
+  behavioural_disposition: BCIO:050416
+  organism: COB:0000022
+ 
+relations:
+  inheres in: RO:0000052
+ 
+vars:
+  parent: "'behavioural_disposition'"
+ 
+data_vars:
+  label: xsd:string
+  definition: xsd:string
+ 
+name:
+  text: "%s"
+  vars:
+    - label
+ 
+def:
+  text: "%s"
+  vars:
+    - definition
+ 
+subClassOf:
+  text: "%s and ('inheres in' some 'organism')"
+  vars:
+    - parent
