@@ -1,0 +1,45 @@
+pattern_name: p_locomotor_regime
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_locomotor_regime
+
+description: |-
+  This pattern captures locomotion activities, defined by the forms of behaviour regime and switch that they realize.
+
+  Examples:
+  - aerobatics regime: flying-regime that realizes dynamically-unstable pattern and phase switch
+  - punt regime: interfacing-regime that realizes steady-locomotion pattern and transitioning switch
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  locomotion_positioning: ACTAN:0000176
+  regime_pattern: ACTAN:0000064
+  configuration-switch: ACTAN:0000541
+
+relations:
+  realizes: BFO:0000055
+
+vars:
+  regime: "''locomotion_positioning''"
+  pattern: "'regime_pattern'"
+  switch: "'configuration-switch'"
+
+name:
+  text: "%s"
+  vars:
+    - regime
+
+def:
+  text: "%s that realizes %s and %s."
+  vars:
+    - regime
+    - pattern
+    - switch
+
+equivalentTo:
+  text: "%s and 'realizes' some %s and 'realizes' some %s"
+  vars:
+    - regime
+    - pattern
+    - switch
