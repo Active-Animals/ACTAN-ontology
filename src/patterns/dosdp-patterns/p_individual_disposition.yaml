@@ -2,9 +2,13 @@ pattern_name: p_individual_disposition
  
 pattern_iri: http://purl.obolibrary.org/obo/mypattern/p_individual_disposition
  
-description: >-
+description: |-
   A disposition that inheres in an individual organism. The bearer is fixed in the axiom so that
   individual-level and group-level dispositions cannot be mixed up.
+
+  Example:
+  - natatorial mode: locomotion-mode that 'inheres in' an organism.
+  - jet pattern: gait pattern that 'inheres in' an organism.
  
 contributors:
   - https://orcid.org/0000-0002-4277-2151
@@ -34,6 +38,6 @@ def:
     - definition
  
 subClassOf:
-  text: "%s and ('inheres in' some 'organism')"
+  text: "%s that 'inheres in' an organism."
   vars:
     - parent
