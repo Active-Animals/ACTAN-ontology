@@ -1,6 +1,6 @@
-pattern_name: p_locomotor_gait
+pattern_name: locomotor_gait
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_locomotor_gait
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotor_gait
 
 description: |-
   This pattern captures locomotor gaits, defined by the locomotion modes and underlying gait patterns that they realize.
