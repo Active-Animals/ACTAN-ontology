@@ -1,6 +1,6 @@
 pattern_name: disposition_in_individuals
  
-pattern_iri: http://purl.obolibrary.org/obo/mypattern/disposition_in_individuals
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_in_individuals
  
 description: |-
   A disposition that inheres in an individual organism. The bearer is fixed in the axiom so that
