@@ -3,12 +3,11 @@ pattern_name: disposition_in_individuals
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_in_individuals
  
 description: |-
-  A disposition that inheres in an individual organism. The bearer is fixed in the axiom so that
-  individual-level and group-level dispositions cannot be mixed up.
+  A disposition that is characteristic of an individual organism.
 
   Example:
-  - natatorial mode: locomotion-mode that 'inheres in' an organism.
-  - jet pattern: gait pattern that 'inheres in' an organism.
+  - natatorial mode: Locomotion-mode that is characteristic of an organism.
+  - jet pattern: Gait pattern that is characteristic of an organism.
  
 contributors:
   - https://orcid.org/0000-0002-4277-2151
@@ -18,7 +17,7 @@ classes:
   organism: COB:0000022
  
 relations:
-  inheres in: RO:0000052
+  characteristic of: RO:0000052
  
 vars:
   parent: "'behavioural_disposition'"
@@ -38,6 +37,6 @@ def:
     - definition
  
 subClassOf:
-  text: "%s that 'inheres in' an organism."
+  text: "%s that is characteristic of an organism."
   vars:
     - parent
