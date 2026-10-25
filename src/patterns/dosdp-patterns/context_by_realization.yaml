@@ -2,14 +2,14 @@ pattern_name: context_by_realization
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_realization
 
-description: >-
-  This pattern captures context behaviours which are best differentiated by the entities which they realize.
+description: |-
+  This pattern captures context behaviours which are best differentiated by what they realize.
 
   Examples:
-  - caring: 'breeding' behaviour that realizes a role
+  - caring breeding: Breeding context that realizes a role.
+  - feigning deception: Deception manipulation that realizes compensation switch.
 
 contributors:
-  - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
@@ -29,7 +29,7 @@ name:
     - context
 
 def:
-  text: "%s that realizes a/an %s form."
+  text: "%s that realizes %s."
   vars:
     - context
     - realization
