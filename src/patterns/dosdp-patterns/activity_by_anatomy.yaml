@@ -1,6 +1,6 @@
-pattern_name: p_anatomy_activity
+pattern_name: activity_by_anatomy
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_anatomy_activity
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/activity_by_anatomy
 
 description: |-
   This pattern captures subdivisions of activities by the anatomical parts involved.
