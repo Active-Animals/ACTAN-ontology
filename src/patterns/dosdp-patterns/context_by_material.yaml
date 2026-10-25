@@ -6,8 +6,8 @@ description: |-
   This pattern captures context behaviours which are best differentiated by the material involved.
 
   Examples:
-  - respiratory behaviour: physical-exchange that involves the respiratory system
-  - parenting caring: caring that involves a family
+  - air expiration: Expiration respiration that involves air.
+  - parenting caring: Caring breeding that involves family.
 
 contributors:
   - https://orcid.org/0000-0002-4277-2151
