@@ -2,14 +2,14 @@ pattern_name: context_by_environmental_process
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_environmental_process
 
-description: >-
+description: |-
   This pattern captures context behaviours which are best differentiated by the environmental processes which they incorporate.
 
   Examples:
-  - basking: resting that involves the 'insolation' process
+  - bask thermoregulation: Thermoregulation homeostasis that involves the insolation process.
+  - countershading camouflaging: Camouflaging resemblance that involves colouration activity.
 
 contributors:
-  - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
@@ -21,7 +21,7 @@ relations:
   
 vars:
   context: "'context_behaviour'"
-  environmental_process: "'environmental_system_process'"
+  environment: "'environmental_system_process'"
 
 name:
   text: "%s"
@@ -32,10 +32,10 @@ def:
   text: "%s that involves %s."
   vars:
     - context
-    - environmental_process
+    - environment
 
 equivalentTo:
   text: "%s and 'has_part' some %s"
   vars:
     - context
-    - environmental_process
+    - environment
