@@ -1,13 +1,13 @@
 pattern_name: p_material_activity
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_physical_characteristic_activity
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_material_activity
 
 description: |-
-  This pattern captures subdivisions of activities by the non-anatomical material involved.
+  This pattern captures subdivisions of activities by the material involved.
 
   Examples:
-  - adhesion kinetics: Kinetics activity that involves adhesivity.
-  - chromatics colouration: Colouration activity that involves chromatic property.
+  - dust anointment: Anointment technic that involves soil.
+  - web-building construction: Construction technic that involves silk.
 
 contributors:
   - https://orcid.org/0000-0002-4277-2151
