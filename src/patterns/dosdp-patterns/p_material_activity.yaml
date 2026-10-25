@@ -1,0 +1,41 @@
+pattern_name: p_material_activity
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_physical_characteristic_activity
+
+description: |-
+  This pattern captures subdivisions of activities by the non-anatomical material involved.
+
+  Examples:
+  - adhesion kinetics: Kinetics activity that involves adhesivity.
+  - chromatics colouration: Colouration activity that involves chromatic property.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  material_entity: BFO:0000040
+
+relations:
+  has_participant: RO:0000057
+
+vars:
+  activity: "'activity_behaviour'"
+  material: "'material_entity'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - activity
+    - material
+
+equivalentTo:
+  text: "%s and 'has_participant' some %s"
+  vars:
+    - activity
+    - material
