@@ -2,14 +2,14 @@ pattern_name: context_by_activity
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_activity
 
-description: >-
+description: |-
   This pattern captures context behaviours which are best differentiated by the activities which they incorporate.
 
   Examples:
-  - continuous-ram: suspension-feeding that involves mouth-opening
+  - attack antagonism: Antagonism agonism that involves contacting movement.
+  - excavation graze: Graze forage that involves dig kinetics.
 
 contributors:
-  - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
