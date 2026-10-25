@@ -4,6 +4,7 @@ pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_aggregator_be
 
 description: |-
   This pattern captures classes which simply provide an aggregational cataloging utility. They should not be used directly for annotating observations.
+
   Examples:
   - 'activity behaviour'
   - 'context behaviour'
