@@ -1,0 +1,40 @@
+pattern_name: p_technical_routine
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_technical_routine
+
+description: |-
+ This pattern captures technical activities, defined by the routine involved.
+
+  Examples:
+  - construction technic: technic activity that realizes the rearrangement pattern
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  technic_activity: ACTAN:0000271
+  routine_pattern: ACTAN:0000397
+
+relations:
+  realizes: BFO:0000055
+
+vars:
+  technic: "'technic_activity'"
+  routine_pattern: "'routine'"
+
+name:
+  text: "%s"
+  vars:
+    - technic
+
+def:
+  text: "%s that involves the %s."
+  vars:
+    - technic
+    - routine
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - technic
+    - routine
