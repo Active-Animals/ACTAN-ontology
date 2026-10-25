@@ -1,6 +1,6 @@
-pattern_name: p_technical_routine
+pattern_name: technical_routine
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_technical_routine
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/technical_routine
 
 description: |-
  This pattern captures technical activities, defined by the routine involved.
