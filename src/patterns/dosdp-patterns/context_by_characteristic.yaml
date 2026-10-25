@@ -1,0 +1,41 @@
+pattern_name: context_by_characteristic
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_characteristic
+
+description: |-
+  This pattern captures context behaviours which are best differentiated by their characteristics.
+
+  Examples:
+  - crypsis deception: Deception manipulation that has inconspicuous character.
+  - daily-vertical migration: Migration translocation that has crepuscular character.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  characteristic: PATO:0000001
+  
+relations:
+  has_quality: RO:0000086
+  
+vars:
+  context: "'context_behaviour'"
+  character: "'characteristic'"
+  
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that has %s character."
+  vars:
+    - context
+    - character
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - context
+    - character
