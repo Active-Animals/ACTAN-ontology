@@ -1,0 +1,33 @@
+pattern_name: disposition_aggregator
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_aggregator
+
+description: |-
+  This pattern captures classes which simply provide an aggregational cataloging utility. They should not be used directly for annotating behaviours.
+
+  Examples:
+  - configuration-switch
+  - repertoire-pattern
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  disposition: BFO:0000016
+
+relations: {}
+
+annotationProperties:
+  comment: rdfs:comment
+
+vars:
+  aggregator: "'disposition'"
+  
+name:
+  text: "%s"
+  vars:
+    - aggregator
+
+annotations:
+  - annotationProperty: comment
+    text: "This class is just an aggregator and not for annotation."
