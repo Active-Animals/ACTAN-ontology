@@ -1,6 +1,6 @@
-pattern_name: p_downstream_pose
+pattern_name: pose_downstream
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_downstream_pose
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/pose_downstream
 
 description: |-
   This pattern captures postures and placements which are causally downstream of movements and manoeuvres. It is not intended for use with other activities.
