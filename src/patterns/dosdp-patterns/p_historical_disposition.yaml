@@ -2,7 +2,7 @@ pattern_name: p_historical_disposition
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_historical_disposition
 
-description: >-
+description: |-
   This pattern captures dispositions which have more historically had traction than now, although they may not necessarily be defunct. They do not need to be deprecated, since they are not substantially misrepresented.
 
   Examples:
