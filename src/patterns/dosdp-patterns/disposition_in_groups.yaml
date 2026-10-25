@@ -3,12 +3,11 @@ pattern_name: disposition_in_groups
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_in_groups
 
 description: |-
-  A disposition that inheres in a collection of organisms. The bearer is fixed in the axiom so that
-  individual-level and group-level dispositions cannot be mixed up.
+  A disposition that is characteristic of a collection of organisms.
 
   Example:
-  - mill formation: collective-formation that 'inheres in' a collection of organisms.
-  - community membership: group-membership that 'inheres in' a collection of organisms.
+  - mill formation: collective-formation that is characteristic of a collection of organisms.
+  - community membership: group-membership that is characteristic of a collection of organisms.
  
 contributors:
   - https://orcid.org/0000-0002-4277-2151
@@ -18,7 +17,7 @@ classes:
   collection_of_organisms: PCO:0000000
  
 relations:
-  inheres in: RO:0000052
+  characteristic of: RO:0000052
  
 vars:
   parent: "'behavioural_disposition'"
@@ -38,6 +37,6 @@ def:
     - definition
  
 subClassOf:
-  text: "%s that 'inheres in' a collection of organisms."
+  text: "%s that is characteristic of a collection of organisms."
   vars:
     - parent
