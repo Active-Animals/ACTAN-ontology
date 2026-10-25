@@ -1,7 +1,7 @@
 pattern_name: disposition_in_groups
  
-pattern_iri: http://purl.obolibrary.org/obo/mypattern/disposition_in_groups
- 
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/disposition_in_groups
+
 description: |-
   A disposition that inheres in a collection of organisms. The bearer is fixed in the axiom so that
   individual-level and group-level dispositions cannot be mixed up.
