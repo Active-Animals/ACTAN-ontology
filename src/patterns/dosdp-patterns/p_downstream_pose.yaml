@@ -1,0 +1,41 @@
+pattern_name: p_downstream_pose
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_downstream_pose
+
+description: >-
+  This pattern captures postures and placements which are causally downstream of movements. It is not intended for use with other activities.
+
+  Examples:
+  - arch placement: Placement kinematics that results from bending movement.
+  - hang posture: Posture positioning that results from extending movement.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  movement_kinematics: ACTAN:0000082
+
+relations:
+  causally_downstream_of: RO:0002404
+
+vars:
+  pose: "'activity_behaviour'"
+  movement: "'movement_kinematics'"
+
+name:
+  text: "%s"
+  vars:
+    - pose
+
+def:
+  text: "%s that results from %s."
+  vars:
+    - pose
+    - movement
+
+equivalentTo:
+  text: "%s and 'causally_downstream_of' some %s"
+  vars:
+    - pose
+    - movement
