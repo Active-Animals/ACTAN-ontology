@@ -2,15 +2,14 @@ pattern_name: context_by_life_cycle
 
 pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_life_cycle
 
-description: >-
+description: |-
   This pattern captures context behaviours which are best differentiated by the life cycle stage in which they occur.
 
   Examples:
-  - assessment cognition: 'cognition' context that involves the 'appraisal' process
-  - learned behaviour: 'perceptual' context that involves the 'learning' process
+  - recruitment development: Development context that involves the larval stage.
+  - wing-exercise development: Development context that involves the sexually immature stage.
 
 contributors:
-  - https://orcid.org/0000-0002-6601-2165
   - https://orcid.org/0000-0002-4277-2151
 
 classes:
@@ -30,7 +29,7 @@ name:
     - context
 
 def:
-  text: "%s that involves the %s."
+  text: "%s that involves %s."
   vars:
     - context
     - stage
