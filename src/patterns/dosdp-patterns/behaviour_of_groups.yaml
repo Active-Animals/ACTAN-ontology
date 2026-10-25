@@ -1,6 +1,6 @@
-pattern_name: p_group_behaviour
+pattern_name: behaviour_of_groups
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_group_behaviour
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/behaviour_of_groups
 
 description: |-
   This pattern captures the emergent behaviour of an aggregation of animals, defined by the collective formation that it realizes.
