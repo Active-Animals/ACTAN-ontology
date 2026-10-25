@@ -1,6 +1,6 @@
-pattern_name: p_collective_disposition
+pattern_name: disposition_in_groups
  
-pattern_iri: http://purl.obolibrary.org/obo/mypattern/p_collective_disposition
+pattern_iri: http://purl.obolibrary.org/obo/mypattern/disposition_in_groups
  
 description: |-
   A disposition that inheres in a collection of organisms. The bearer is fixed in the axiom so that
