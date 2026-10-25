@@ -1,6 +1,6 @@
-pattern_name: p_aggregator_behaviour
+pattern_name: behaviour_aggregator
 
-pattern_iri: https://github.com/Active-Animals/Ontology/patterns/p_aggregator_behaviour
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/behaviour_aggregator
 
 description: |-
   This pattern captures classes which simply provide an aggregational cataloging utility. They should not be used directly for annotating observations.
