@@ -24,6 +24,7 @@ vars:
   gait: "'locomotion_positioning'"
   mode: "'locomotion-mode'"
   pattern: "'gait_pattern'"
+
 name:
   text: "%s"
   vars:
