@@ -1,0 +1,40 @@
+pattern_name: locomotor_mould
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/locomotor_mould
+
+description: |-
+  This pattern captures locomotion activities, defined by the habitats which have moulded them.
+
+  Example:
+  - flying locomotion: Locomotion positioning that realizes aerial mould.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  locomotion_positioning: ACTAN:0000176
+  environment-mould: ACTAN:0000179
+
+relations:
+  realizes: BFO:0000055
+
+vars:
+  locomotion: "'locomotion_positioning'"
+  mould: "'environment-mould'"
+
+name:
+  text: "%s"
+  vars:
+    - locomotion
+
+def:
+  text: "%s that realizes %s."
+  vars:
+    - locomotion
+    - mould
+
+equivalentTo:
+  text: "%s and 'realizes' some %s"
+  vars:
+    - locomotion
+    - mould
