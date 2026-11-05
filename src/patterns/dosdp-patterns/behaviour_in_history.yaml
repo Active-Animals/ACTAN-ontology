@@ -1,0 +1,32 @@
+pattern_name: behaviour_in_history
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/behaviour_in_history
+
+description: |-
+  This pattern captures behaviours which have more historically had traction than now, although they may not necessarily be defunct. They do not need to be deprecated, since they are not substantially misrepresented.
+
+  Examples:
+  - 'ownership assessment'
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  behaviour: ACTAN:0000002
+
+relations: {}
+
+annotationProperties:
+  comment: rdfs:comment
+
+vars:
+  history: "'behaviour'"
+  
+name:
+  text: "%s"
+  vars:
+    - behaviour
+
+annotations:
+  - annotationProperty: comment
+    text: "This term is part of a historical ethological perspective."
