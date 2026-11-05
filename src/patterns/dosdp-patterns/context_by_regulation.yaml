@@ -1,0 +1,41 @@
+pattern_name: context_by_regulation
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/context_by_regulation
+
+description: |-
+  This pattern captures context behaviours which are best differentiated by the regulation process involved.
+
+  Examples:
+  - exploit competition: Competition that involves synergization.
+  - catch constraint: Constraint that involves control.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  context_behaviour: ACTAN:0000751
+  regulation: INO:0000157
+
+relations:
+  has_part: BFO:0000051
+  
+vars:
+  context: "'context_behaviour'"
+  regulation: "'regulation'"
+
+name:
+  text: "%s"
+  vars:
+    - context
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - context
+    - regulation
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - context
+    - regulation
