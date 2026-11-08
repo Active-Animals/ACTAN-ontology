@@ -1,0 +1,41 @@
+pattern_name: activity_by_process_characteristic
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/activity_by_process_characteristic
+
+description: |-
+  This pattern captures subdivisions of activities by their process characteristics.
+
+  Examples:
+  - chew bite: Bite kinetics that is recurrent.
+  - smooth-pursuit conjugation: Conjugation eye-movement that is continuous.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+  process_characteristic: PATO:0001236
+
+relations:
+  has_quality: RO:0000086
+
+vars:
+  activity: "'activity_behaviour'"
+  characteristic: "'process_characteristic'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
+
+def:
+  text: "%s that is %s."
+  vars:
+    - activity
+    - characteristic
+
+equivalentTo:
+  text: "%s and 'has_quality' some %s"
+  vars:
+    - activity
+    - characteristic
