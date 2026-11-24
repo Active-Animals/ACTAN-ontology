@@ -1,0 +1,41 @@
+pattern_name: activity_composite
+
+pattern_iri: https://github.com/Active-Animals/Ontology/patterns/activity_composite
+
+description: |-
+  This pattern captures activity behaviours which are special combinations of the other activity behaviours which they incorporate.
+
+  This pattern should be rarely used, since the combination itself should be a recognised, named movement concept; otherwise it is likely to simply be one of a sequence of movements, or part of a context behaviour constellation concept.
+
+  Examples:
+  - circumducting movement: Movement kinematics that involves abducting, extending, adducting.
+
+contributors:
+  - https://orcid.org/0000-0002-4277-2151
+
+classes:
+  activity_behaviour: ACTAN:0000078
+
+relations:
+  has_part: BFO:0000051
+
+vars:
+  activity: "'activity_behaviour'"
+  composite: "'activity_behaviour'"
+
+name:
+  text: "%s"
+  vars:
+    - activity
+
+def:
+  text: "%s that involves %s."
+  vars:
+    - activity
+    - composite
+
+equivalentTo:
+  text: "%s and 'has_part' some %s"
+  vars:
+    - activity
+    - composite
